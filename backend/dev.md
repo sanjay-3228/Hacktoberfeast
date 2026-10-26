@@ -7,7 +7,8 @@ The backend is a small FastAPI service. It does not process videos or upload fil
 - Python 3.11 or newer
 - Git
 - A completed job folder, or the included `backend/jobs/demo` fixture
-- Optional: an OpenAI-compatible API key or Azure OpenAI credentials for LLM-backed Q&A
+- Optional: a Groq API key for LLM-backed Q&A
+- Optional: OpenAI-compatible or Azure OpenAI credentials as fallbacks
 - Optional: `sentence-transformers` for semantic search
 
 ## Local setup on Windows
@@ -48,11 +49,12 @@ Important settings:
 
 - `JOBS_DIR`: directory containing job folders. The default in `.env.example` is `./jobs`; when running from `backend/`, use `JOBS_DIR=./jobs` or an absolute path.
 - `CORS_ORIGINS`: comma-separated frontend origins, for example `http://localhost:5173`. Use `*` only for local development.
+- `GROQ_API_KEY` and `GROQ_MODEL`: preferred Groq configuration. The default model is `openai/gpt-oss-120b`.
 - `LLM_BASE_URL`, `LLM_API_KEY`, and `LLM_MODEL`: optional OpenAI-compatible Q&A configuration.
 - `AZURE_OPENAI_ENDPOINT`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_DEPLOYMENT`, and `AZURE_OPENAI_API_VERSION`: optional Azure OpenAI configuration.
 - `EMBED_MODEL`: sentence-transformers model name used when chunks contain embeddings.
 
-Never commit `.env` or paste API keys into source files. The backend can run without an LLM key; `/ask` then returns the best matching excerpt in development mode.
+Never commit `.env` or paste API keys into source files. The backend can run without an LLM key; `/ask` then returns the best matching excerpt in development mode. Groq responses are requested without streaming because the endpoint needs the complete response before returning it.
 
 ## Run the API
 

@@ -109,6 +109,8 @@ class Settings:
     azure_openai_api_key: str
     azure_openai_deployment: str
     azure_openai_api_version: str
+    groq_api_key: str = ""
+    groq_model: str = "openai/gpt-oss-120b"
 
 
 def load_settings() -> Settings:
@@ -119,7 +121,9 @@ def load_settings() -> Settings:
     """
     _load_env_file()
 
-    raw_jobs_dir = Path(_env("JOBS_DIR", str(_BASE_DIR / "jobs"))).expanduser()
+    raw_jobs_dir = Path(
+        _env("JOBS_DIR") or str(_BASE_DIR / "jobs")
+    ).expanduser()
     if not raw_jobs_dir.is_absolute():
         raw_jobs_dir = _BASE_DIR / raw_jobs_dir
     jobs_dir = raw_jobs_dir.resolve()
@@ -138,6 +142,9 @@ def load_settings() -> Settings:
             "AZURE_OPENAI_API_VERSION", "2024-10-21"
         )
         or "2024-10-21",
+        groq_api_key=_env("GROQ_API_KEY"),
+        groq_model=_env("GROQ_MODEL", "openai/gpt-oss-120b")
+        or "openai/gpt-oss-120b",
     )
 
 
@@ -523,12 +530,16 @@ def _search_chunks(
 
 
 def _llm_client() -> tuple[Any | None, str]:
-    """Build an OpenAI/Azure client, or ``(None, "")`` when unconfigured."""
+    """Build a Groq, OpenAI, or Azure client, or ``(None, "")`` when unconfigured."""
     try:
+        from groq import Groq
         from openai import AzureOpenAI, OpenAI
     except ImportError:
-        logger.warning("openai is not installed; LLM answers are disabled")
+        logger.warning("groq/openai is not installed; LLM answers are disabled")
         return None, ""
+
+    if settings.groq_api_key:
+        return Groq(api_key=settings.groq_api_key), settings.groq_model
 
     if (
         settings.azure_openai_endpoint
@@ -608,15 +619,23 @@ def _llm_answer(question: str, sources: Sequence[Source]) -> str | None:
     user = f"Excerpts:\n{excerpts}\n\nQuestion: {question}"
 
     try:
-        response = client.chat.completions.create(
-            model=model,
-            temperature=0.2,
-            max_tokens=400,
-            messages=[
+        options: dict[str, Any] = {
+            "model": model,
+            "messages": [
                 {"role": "system", "content": system},
                 {"role": "user", "content": user},
             ],
-        )
+        }
+        if settings.groq_api_key:
+            options.update(
+                temperature=1,
+                max_completion_tokens=400,
+                top_p=1,
+                reasoning_effort="medium",
+            )
+        else:
+            options.update(temperature=0.2, max_tokens=400)
+        response = client.chat.completions.create(**options)
         content = response.choices[0].message.content
         if content and content.strip():
             return content.strip()

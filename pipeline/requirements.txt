@@ -1,10 +1,11 @@
 # Install on Kaggle/Colab. Pin the versions that work for you after the first
 # successful run (pyannote and torch often conflict: install pyannote first).
-faster-whisper
+faster-whisper==1.2.1
 pyannote.audio
 sentence-transformers
 mediapipe==0.10.14
 opencv-python-headless
 numpy
 openai
+groq
 python-dotenv

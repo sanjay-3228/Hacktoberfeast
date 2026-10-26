@@ -19,7 +19,9 @@ HF_TOKEN = os.getenv("HF_TOKEN", "")
 
 EMBED_MODEL = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 
-# LLM (any OpenAI-compatible endpoint, or Azure OpenAI)
+# LLM (Groq is preferred when GROQ_API_KEY is set; OpenAI-compatible/Azure remain supported)
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 LLM_BASE_URL = os.getenv("LLM_BASE_URL", "")
 LLM_API_KEY = os.getenv("LLM_API_KEY", "")
 LLM_MODEL = os.getenv("LLM_MODEL", "")

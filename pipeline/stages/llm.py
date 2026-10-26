@@ -1,7 +1,7 @@
 """Stage 7: names, topic, chapters and takeaways from the transcript (LLM).
 
-Works with any OpenAI-compatible endpoint (OpenAI, Ollama at
-http://localhost:11434/v1, Groq, ...) or Azure OpenAI. See .env.example.
+Uses the Groq SDK when GROQ_API_KEY is configured, with OpenAI-compatible and
+Azure OpenAI fallbacks. See .env.example.
 Keep all provider code inside `call_llm` so it is easy to swap.
 """
 import json
@@ -37,6 +37,22 @@ Rules:
 
 
 def call_llm(system: str, user: str) -> str:
+    if config.GROQ_API_KEY:
+        from groq import Groq
+
+        client = Groq(api_key=config.GROQ_API_KEY)
+        model = config.GROQ_MODEL
+        resp = client.chat.completions.create(
+            model=model,
+            messages=[{"role": "system", "content": system},
+                      {"role": "user", "content": user}],
+            temperature=1,
+            max_completion_tokens=2048,
+            top_p=1,
+            reasoning_effort="medium",
+        )
+        return resp.choices[0].message.content
+
     from openai import AzureOpenAI, OpenAI
 
     if config.AZURE_OPENAI_ENDPOINT and config.AZURE_OPENAI_API_KEY:

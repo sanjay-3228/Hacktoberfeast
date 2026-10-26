@@ -20,7 +20,8 @@ if that file already exists.
 
 1. Verify your phone number, enable **GPU** and **Internet** in the notebook settings.
 2. Add Secrets: `HF_TOKEN` (Hugging Face read token) and, for the LLM step,
-   `LLM_API_KEY` (plus `LLM_BASE_URL` / `LLM_MODEL`, or the Azure ones).
+   `GROQ_API_KEY` (the default model is `openai/gpt-oss-120b`). The existing
+   OpenAI-compatible and Azure settings remain supported as fallbacks.
 3. On Hugging Face, accept the terms of the pyannote models (while logged in).
 4. Upload this project folder (or just `pipeline/`) as a private Kaggle
    Dataset, and your demo videos as another one. Attach both to the notebook.
@@ -29,6 +30,24 @@ if that file already exists.
    unzip into `backend/jobs/`.
 
 ## Run locally (tiny test, CPU)
+
+Use Python 3.11 or 3.12 for the model-dependent pipeline. The face stage uses
+the legacy `mp.solutions.face_mesh` API, which is not available in newer
+MediaPipe 1.x releases and is not compatible with the Python 3.14 package set.
+
+Install FFmpeg separately and make sure both `ffmpeg` and `ffprobe` are on
+`PATH`. On Windows, one option is:
+
+```powershell
+winget install --id Gyan.FFmpeg.Shared --exact
+```
+
+If FFmpeg is installed but not on `PATH`, set the executable paths explicitly:
+
+```powershell
+$env:FFMPEG_BIN = "C:\path\to\ffmpeg.exe"
+$env:FFPROBE_BIN = "C:\path\to\ffprobe.exe"
+```
 
 ```bash
 cd pipeline
