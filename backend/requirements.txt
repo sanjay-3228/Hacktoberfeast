@@ -6,3 +6,7 @@ python-dotenv>=1.0
 openai>=1.30
 # Optional: semantic search. Without it the backend falls back to keyword search.
 # sentence-transformers>=3.0
+
+# Test suite (python -m pytest tests -q from backend/)
+pytest>=8.0
+httpx>=0.27
