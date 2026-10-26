@@ -11,3 +11,4 @@ groq>=0.11
 # Test suite (python -m pytest tests -q from backend/)
 pytest>=8.0
 httpx>=0.27
+python-multipart>=0.0.9

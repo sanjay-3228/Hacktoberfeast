@@ -35,7 +35,9 @@ def process_video(video_path: str, job_id: str, use_faces: bool = True,
     with timed("2 transcribe"):
         transcript = transcribe(info["audio"], job_dir / "transcript.json")
     with timed("3 diarize"):
-        turns = diarize(info["audio"], job_dir / "diarization.json", num_speakers)
+        turns = diarize(
+            info["audio"], transcript, job_dir / "diarization.json", num_speakers
+        )
     with timed("4 merge"):
         messages = merge(transcript, turns)
 

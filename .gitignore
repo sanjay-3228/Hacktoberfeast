@@ -10,3 +10,5 @@ backend/jobs/*
 !backend/jobs/demo/
 pipeline/jobs/
 *.zip
+videos/
+video.mp4

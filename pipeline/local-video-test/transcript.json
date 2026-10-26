@@ -1,0 +1,3591 @@
+{
+  "language": "en",
+  "segments": [
+    {
+      "start": 7.11,
+      "end": 11.03,
+      "text": "I don't know where the question, I don't know where the song is.",
+      "words": [
+        {
+          "word": " I",
+          "start": 7.11,
+          "end": 7.59
+        },
+        {
+          "word": " don't",
+          "start": 7.59,
+          "end": 7.81
+        },
+        {
+          "word": " know",
+          "start": 7.81,
+          "end": 7.91
+        },
+        {
+          "word": " where",
+          "start": 7.91,
+          "end": 8.13
+        },
+        {
+          "word": " the",
+          "start": 8.13,
+          "end": 8.25
+        },
+        {
+          "word": " question,",
+          "start": 8.25,
+          "end": 8.79
+        },
+        {
+          "word": " I",
+          "start": 9.07,
+          "end": 9.57
+        },
+        {
+          "word": " don't",
+          "start": 9.57,
+          "end": 9.75
+        },
+        {
+          "word": " know",
+          "start": 9.75,
+          "end": 9.87
+        },
+        {
+          "word": " where",
+          "start": 9.87,
+          "end": 10.03
+        },
+        {
+          "word": " the",
+          "start": 10.03,
+          "end": 10.15
+        },
+        {
+          "word": " song",
+          "start": 10.15,
+          "end": 10.37
+        },
+        {
+          "word": " is.",
+          "start": 10.37,
+          "end": 11.03
+        }
+      ]
+    },
+    {
+      "start": 12.49,
+      "end": 14.09,
+      "text": "When I ask you a question, the first one?",
+      "words": [
+        {
+          "word": " When",
+          "start": 12.49,
+          "end": 12.55
+        },
+        {
+          "word": " I",
+          "start": 12.55,
+          "end": 12.79
+        },
+        {
+          "word": " ask",
+          "start": 12.79,
+          "end": 12.99
+        },
+        {
+          "word": " you",
+          "start": 12.99,
+          "end": 13.11
+        },
+        {
+          "word": " a",
+          "start": 13.11,
+          "end": 13.35
+        },
+        {
+          "word": " question,",
+          "start": 13.35,
+          "end": 13.43
+        },
+        {
+          "word": " the",
+          "start": 13.49,
+          "end": 13.69
+        },
+        {
+          "word": " first",
+          "start": 13.69,
+          "end": 13.85
+        },
+        {
+          "word": " one?",
+          "start": 13.85,
+          "end": 14.09
+        }
+      ]
+    },
+    {
+      "start": 16.49,
+      "end": 19.09,
+      "text": "Right, what is the worst thing about being young?",
+      "words": [
+        {
+          "word": " Right,",
+          "start": 16.49,
+          "end": 16.97
+        },
+        {
+          "word": " what",
+          "start": 16.97,
+          "end": 17.45
+        },
+        {
+          "word": " is",
+          "start": 17.45,
+          "end": 17.67
+        },
+        {
+          "word": " the",
+          "start": 17.67,
+          "end": 17.81
+        },
+        {
+          "word": " worst",
+          "start": 17.81,
+          "end": 18.11
+        },
+        {
+          "word": " thing",
+          "start": 18.11,
+          "end": 18.35
+        },
+        {
+          "word": " about",
+          "start": 18.35,
+          "end": 18.55
+        },
+        {
+          "word": " being",
+          "start": 18.55,
+          "end": 18.81
+        },
+        {
+          "word": " young?",
+          "start": 18.81,
+          "end": 19.09
+        }
+      ]
+    },
+    {
+      "start": 20.37,
+      "end": 22.89,
+      "text": "Well, you get lots of homework.",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 20.37,
+          "end": 20.85
+        },
+        {
+          "word": " you",
+          "start": 20.89,
+          "end": 21.13
+        },
+        {
+          "word": " get",
+          "start": 21.13,
+          "end": 21.37
+        },
+        {
+          "word": " lots",
+          "start": 21.37,
+          "end": 21.89
+        },
+        {
+          "word": " of",
+          "start": 21.89,
+          "end": 22.27
+        },
+        {
+          "word": " homework.",
+          "start": 22.27,
+          "end": 22.89
+        }
+      ]
+    },
+    {
+      "start": 23.63,
+      "end": 32.73,
+      "text": "It's also pretty, they're like in the middle, like in school, like in the middle of bad and good.",
+      "words": [
+        {
+          "word": " It's",
+          "start": 23.63,
+          "end": 24.15
+        },
+        {
+          "word": " also",
+          "start": 24.15,
+          "end": 24.37
+        },
+        {
+          "word": " pretty,",
+          "start": 24.37,
+          "end": 24.79
+        },
+        {
+          "word": " they're",
+          "start": 25.41,
+          "end": 26.13
+        },
+        {
+          "word": " like",
+          "start": 26.13,
+          "end": 26.39
+        },
+        {
+          "word": " in",
+          "start": 26.39,
+          "end": 26.97
+        },
+        {
+          "word": " the",
+          "start": 26.97,
+          "end": 27.09
+        },
+        {
+          "word": " middle,",
+          "start": 27.09,
+          "end": 28.27
+        },
+        {
+          "word": " like",
+          "start": 28.89,
+          "end": 29.11
+        },
+        {
+          "word": " in",
+          "start": 29.11,
+          "end": 29.61
+        },
+        {
+          "word": " school,",
+          "start": 29.61,
+          "end": 30.53
+        },
+        {
+          "word": " like",
+          "start": 30.73,
+          "end": 30.87
+        },
+        {
+          "word": " in",
+          "start": 30.87,
+          "end": 31.05
+        },
+        {
+          "word": " the",
+          "start": 31.05,
+          "end": 31.15
+        },
+        {
+          "word": " middle",
+          "start": 31.15,
+          "end": 31.45
+        },
+        {
+          "word": " of",
+          "start": 31.45,
+          "end": 31.71
+        },
+        {
+          "word": " bad",
+          "start": 31.71,
+          "end": 32.25
+        },
+        {
+          "word": " and",
+          "start": 32.25,
+          "end": 32.45
+        },
+        {
+          "word": " good.",
+          "start": 32.45,
+          "end": 32.73
+        }
+      ]
+    },
+    {
+      "start": 33.39,
+      "end": 35.65,
+      "text": "What is the worst thing about being old?",
+      "words": [
+        {
+          "word": " What",
+          "start": 33.39,
+          "end": 33.91
+        },
+        {
+          "word": " is",
+          "start": 33.91,
+          "end": 34.09
+        },
+        {
+          "word": " the",
+          "start": 34.09,
+          "end": 34.29
+        },
+        {
+          "word": " worst",
+          "start": 34.29,
+          "end": 34.47
+        },
+        {
+          "word": " thing",
+          "start": 34.47,
+          "end": 34.77
+        },
+        {
+          "word": " about",
+          "start": 34.77,
+          "end": 34.97
+        },
+        {
+          "word": " being",
+          "start": 34.97,
+          "end": 35.31
+        },
+        {
+          "word": " old?",
+          "start": 35.31,
+          "end": 35.65
+        }
+      ]
+    },
+    {
+      "start": 37.81,
+      "end": 40.99,
+      "text": "Not being able to do things that you could do when you were young.",
+      "words": [
+        {
+          "word": " Not",
+          "start": 37.81,
+          "end": 38.15
+        },
+        {
+          "word": " being",
+          "start": 38.15,
+          "end": 38.35
+        },
+        {
+          "word": " able",
+          "start": 38.35,
+          "end": 38.57
+        },
+        {
+          "word": " to",
+          "start": 38.57,
+          "end": 38.73
+        },
+        {
+          "word": " do",
+          "start": 38.73,
+          "end": 38.93
+        },
+        {
+          "word": " things",
+          "start": 38.93,
+          "end": 39.31
+        },
+        {
+          "word": " that",
+          "start": 39.31,
+          "end": 39.59
+        },
+        {
+          "word": " you",
+          "start": 39.59,
+          "end": 39.77
+        },
+        {
+          "word": " could",
+          "start": 39.77,
+          "end": 39.93
+        },
+        {
+          "word": " do",
+          "start": 39.93,
+          "end": 40.19
+        },
+        {
+          "word": " when",
+          "start": 40.19,
+          "end": 40.41
+        },
+        {
+          "word": " you",
+          "start": 40.41,
+          "end": 40.55
+        },
+        {
+          "word": " were",
+          "start": 40.55,
+          "end": 40.67
+        },
+        {
+          "word": " young.",
+          "start": 40.67,
+          "end": 40.99
+        }
+      ]
+    },
+    {
+      "start": 41.73,
+      "end": 45.83,
+      "text": "Like, you can't bend down and get stuff on the floor?",
+      "words": [
+        {
+          "word": " Like,",
+          "start": 41.73,
+          "end": 41.97
+        },
+        {
+          "word": " you",
+          "start": 42.85,
+          "end": 43.39
+        },
+        {
+          "word": " can't",
+          "start": 43.39,
+          "end": 43.85
+        },
+        {
+          "word": " bend",
+          "start": 43.85,
+          "end": 43.95
+        },
+        {
+          "word": " down",
+          "start": 43.95,
+          "end": 44.35
+        },
+        {
+          "word": " and",
+          "start": 44.35,
+          "end": 44.53
+        },
+        {
+          "word": " get",
+          "start": 44.53,
+          "end": 44.79
+        },
+        {
+          "word": " stuff",
+          "start": 44.79,
+          "end": 45.03
+        },
+        {
+          "word": " on",
+          "start": 45.03,
+          "end": 45.31
+        },
+        {
+          "word": " the",
+          "start": 45.31,
+          "end": 45.47
+        },
+        {
+          "word": " floor?",
+          "start": 45.47,
+          "end": 45.83
+        }
+      ]
+    },
+    {
+      "start": 46.21,
+      "end": 50.21,
+      "text": "Well, I can still do that, but the problem is your body gets a bit stiff.",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 46.21,
+          "end": 46.43
+        },
+        {
+          "word": " I",
+          "start": 46.55,
+          "end": 46.67
+        },
+        {
+          "word": " can",
+          "start": 46.67,
+          "end": 46.81
+        },
+        {
+          "word": " still",
+          "start": 46.81,
+          "end": 47.07
+        },
+        {
+          "word": " do",
+          "start": 47.07,
+          "end": 47.27
+        },
+        {
+          "word": " that,",
+          "start": 47.27,
+          "end": 47.55
+        },
+        {
+          "word": " but",
+          "start": 47.77,
+          "end": 48.07
+        },
+        {
+          "word": " the",
+          "start": 48.07,
+          "end": 48.43
+        },
+        {
+          "word": " problem",
+          "start": 48.43,
+          "end": 48.69
+        },
+        {
+          "word": " is",
+          "start": 48.69,
+          "end": 48.99
+        },
+        {
+          "word": " your",
+          "start": 48.99,
+          "end": 49.15
+        },
+        {
+          "word": " body",
+          "start": 49.15,
+          "end": 49.41
+        },
+        {
+          "word": " gets",
+          "start": 49.41,
+          "end": 49.67
+        },
+        {
+          "word": " a",
+          "start": 49.67,
+          "end": 49.79
+        },
+        {
+          "word": " bit",
+          "start": 49.79,
+          "end": 49.89
+        },
+        {
+          "word": " stiff.",
+          "start": 49.89,
+          "end": 50.21
+        }
+      ]
+    },
+    {
+      "start": 50.21,
+      "end": 53.03,
+      "text": "I know it hurts a lot when you bend down.",
+      "words": [
+        {
+          "word": " I",
+          "start": 50.21,
+          "end": 51.03
+        },
+        {
+          "word": " know",
+          "start": 51.03,
+          "end": 51.23
+        },
+        {
+          "word": " it",
+          "start": 51.23,
+          "end": 51.39
+        },
+        {
+          "word": " hurts",
+          "start": 51.39,
+          "end": 51.63
+        },
+        {
+          "word": " a",
+          "start": 51.63,
+          "end": 51.81
+        },
+        {
+          "word": " lot",
+          "start": 51.81,
+          "end": 52.01
+        },
+        {
+          "word": " when",
+          "start": 52.01,
+          "end": 52.19
+        },
+        {
+          "word": " you",
+          "start": 52.19,
+          "end": 52.29
+        },
+        {
+          "word": " bend",
+          "start": 52.29,
+          "end": 52.63
+        },
+        {
+          "word": " down.",
+          "start": 52.63,
+          "end": 53.03
+        }
+      ]
+    },
+    {
+      "start": 53.87,
+      "end": 57.15,
+      "text": "That's right, yes. You might get sick more often.",
+      "words": [
+        {
+          "word": " That's",
+          "start": 53.87,
+          "end": 54.35
+        },
+        {
+          "word": " right,",
+          "start": 54.35,
+          "end": 54.53
+        },
+        {
+          "word": " yes.",
+          "start": 54.61,
+          "end": 54.83
+        },
+        {
+          "word": " You",
+          "start": 55.55,
+          "end": 55.63
+        },
+        {
+          "word": " might",
+          "start": 55.63,
+          "end": 55.79
+        },
+        {
+          "word": " get",
+          "start": 55.79,
+          "end": 55.99
+        },
+        {
+          "word": " sick",
+          "start": 55.99,
+          "end": 56.31
+        },
+        {
+          "word": " more",
+          "start": 56.31,
+          "end": 56.79
+        },
+        {
+          "word": " often.",
+          "start": 56.79,
+          "end": 57.15
+        }
+      ]
+    },
+    {
+      "start": 58.27,
+      "end": 60.75,
+      "text": "Hopefully I don't, but that's the problem.",
+      "words": [
+        {
+          "word": " Hopefully",
+          "start": 58.27,
+          "end": 58.75
+        },
+        {
+          "word": " I",
+          "start": 58.75,
+          "end": 58.95
+        },
+        {
+          "word": " don't,",
+          "start": 58.95,
+          "end": 59.31
+        },
+        {
+          "word": " but",
+          "start": 59.59,
+          "end": 60.11
+        },
+        {
+          "word": " that's",
+          "start": 60.11,
+          "end": 60.35
+        },
+        {
+          "word": " the",
+          "start": 60.35,
+          "end": 60.47
+        },
+        {
+          "word": " problem.",
+          "start": 60.47,
+          "end": 60.75
+        }
+      ]
+    },
+    {
+      "start": 61.95,
+      "end": 62.75,
+      "text": "It is pretty bad.",
+      "words": [
+        {
+          "word": " It",
+          "start": 61.95,
+          "end": 61.95
+        },
+        {
+          "word": " is",
+          "start": 61.95,
+          "end": 62.17
+        },
+        {
+          "word": " pretty",
+          "start": 62.17,
+          "end": 62.39
+        },
+        {
+          "word": " bad.",
+          "start": 62.39,
+          "end": 62.75
+        }
+      ]
+    },
+    {
+      "start": 63.19,
+      "end": 68.59,
+      "text": "The only time I want to have some is my mom to like get me born.",
+      "words": [
+        {
+          "word": " The",
+          "start": 63.19,
+          "end": 63.41
+        },
+        {
+          "word": " only",
+          "start": 63.41,
+          "end": 63.65
+        },
+        {
+          "word": " time",
+          "start": 63.65,
+          "end": 63.89
+        },
+        {
+          "word": " I",
+          "start": 63.89,
+          "end": 64.11
+        },
+        {
+          "word": " want",
+          "start": 64.11,
+          "end": 64.31
+        },
+        {
+          "word": " to",
+          "start": 64.31,
+          "end": 64.55
+        },
+        {
+          "word": " have",
+          "start": 64.55,
+          "end": 65.09
+        },
+        {
+          "word": " some",
+          "start": 65.09,
+          "end": 65.23
+        },
+        {
+          "word": " is",
+          "start": 65.23,
+          "end": 65.99
+        },
+        {
+          "word": " my",
+          "start": 65.99,
+          "end": 66.23
+        },
+        {
+          "word": " mom",
+          "start": 66.23,
+          "end": 66.53
+        },
+        {
+          "word": " to",
+          "start": 66.53,
+          "end": 66.91
+        },
+        {
+          "word": " like",
+          "start": 66.91,
+          "end": 67.29
+        },
+        {
+          "word": " get",
+          "start": 67.29,
+          "end": 67.97
+        },
+        {
+          "word": " me",
+          "start": 67.97,
+          "end": 68.17
+        },
+        {
+          "word": " born.",
+          "start": 68.17,
+          "end": 68.59
+        }
+      ]
+    },
+    {
+      "start": 69.55,
+      "end": 71.37,
+      "text": "Oh yeah, do you wish you were old?",
+      "words": [
+        {
+          "word": " Oh",
+          "start": 69.55,
+          "end": 69.75
+        },
+        {
+          "word": " yeah,",
+          "start": 69.75,
+          "end": 69.97
+        },
+        {
+          "word": " do",
+          "start": 70.29,
+          "end": 70.45
+        },
+        {
+          "word": " you",
+          "start": 70.45,
+          "end": 70.59
+        },
+        {
+          "word": " wish",
+          "start": 70.59,
+          "end": 70.79
+        },
+        {
+          "word": " you",
+          "start": 70.79,
+          "end": 70.93
+        },
+        {
+          "word": " were",
+          "start": 70.93,
+          "end": 71.07
+        },
+        {
+          "word": " old?",
+          "start": 71.07,
+          "end": 71.37
+        }
+      ]
+    },
+    {
+      "start": 75.05,
+      "end": 84.89,
+      "text": "Maybe, like, so I was old and I, so I can like buy stuff for my own and have been married, but that would be you.",
+      "words": [
+        {
+          "word": " Maybe,",
+          "start": 75.05,
+          "end": 75.53
+        },
+        {
+          "word": " like,",
+          "start": 75.53,
+          "end": 76.01
+        },
+        {
+          "word": " so",
+          "start": 76.21,
+          "end": 76.37
+        },
+        {
+          "word": " I",
+          "start": 76.37,
+          "end": 76.53
+        },
+        {
+          "word": " was",
+          "start": 76.53,
+          "end": 76.67
+        },
+        {
+          "word": " old",
+          "start": 76.67,
+          "end": 77.11
+        },
+        {
+          "word": " and",
+          "start": 77.11,
+          "end": 77.47
+        },
+        {
+          "word": " I,",
+          "start": 77.47,
+          "end": 77.75
+        },
+        {
+          "word": " so",
+          "start": 78.13,
+          "end": 78.81
+        },
+        {
+          "word": " I",
+          "start": 78.81,
+          "end": 78.97
+        },
+        {
+          "word": " can",
+          "start": 78.97,
+          "end": 79.11
+        },
+        {
+          "word": " like",
+          "start": 79.11,
+          "end": 79.33
+        },
+        {
+          "word": " buy",
+          "start": 79.33,
+          "end": 79.79
+        },
+        {
+          "word": " stuff",
+          "start": 79.79,
+          "end": 80.13
+        },
+        {
+          "word": " for",
+          "start": 80.13,
+          "end": 80.37
+        },
+        {
+          "word": " my",
+          "start": 80.37,
+          "end": 80.55
+        },
+        {
+          "word": " own",
+          "start": 80.55,
+          "end": 80.83
+        },
+        {
+          "word": " and",
+          "start": 80.83,
+          "end": 80.99
+        },
+        {
+          "word": " have",
+          "start": 80.99,
+          "end": 81.21
+        },
+        {
+          "word": " been",
+          "start": 81.21,
+          "end": 81.61
+        },
+        {
+          "word": " married,",
+          "start": 81.61,
+          "end": 83.29
+        },
+        {
+          "word": " but",
+          "start": 83.57,
+          "end": 83.57
+        },
+        {
+          "word": " that",
+          "start": 83.57,
+          "end": 84.47
+        },
+        {
+          "word": " would",
+          "start": 84.47,
+          "end": 84.55
+        },
+        {
+          "word": " be",
+          "start": 84.55,
+          "end": 84.65
+        },
+        {
+          "word": " you.",
+          "start": 84.65,
+          "end": 84.89
+        }
+      ]
+    },
+    {
+      "start": 86.01,
+      "end": 89.13,
+      "text": "Do you wish you were young? Why?",
+      "words": [
+        {
+          "word": " Do",
+          "start": 86.01,
+          "end": 86.21
+        },
+        {
+          "word": " you",
+          "start": 86.21,
+          "end": 86.45
+        },
+        {
+          "word": " wish",
+          "start": 86.45,
+          "end": 86.91
+        },
+        {
+          "word": " you",
+          "start": 86.91,
+          "end": 87.53
+        },
+        {
+          "word": " were",
+          "start": 87.53,
+          "end": 87.75
+        },
+        {
+          "word": " young?",
+          "start": 87.75,
+          "end": 88.37
+        },
+        {
+          "word": " Why?",
+          "start": 89.13,
+          "end": 89.13
+        }
+      ]
+    },
+    {
+      "start": 90.99,
+      "end": 95.57,
+      "text": "Well, the problem about, the great thing about being young is you have more time.",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 90.99,
+          "end": 91.47
+        },
+        {
+          "word": " the",
+          "start": 91.53,
+          "end": 91.63
+        },
+        {
+          "word": " problem",
+          "start": 91.63,
+          "end": 91.85
+        },
+        {
+          "word": " about,",
+          "start": 91.85,
+          "end": 92.21
+        },
+        {
+          "word": " the",
+          "start": 92.51,
+          "end": 92.77
+        },
+        {
+          "word": " great",
+          "start": 92.77,
+          "end": 92.95
+        },
+        {
+          "word": " thing",
+          "start": 92.95,
+          "end": 93.09
+        },
+        {
+          "word": " about",
+          "start": 93.09,
+          "end": 93.25
+        },
+        {
+          "word": " being",
+          "start": 93.25,
+          "end": 93.49
+        },
+        {
+          "word": " young",
+          "start": 93.49,
+          "end": 93.77
+        },
+        {
+          "word": " is",
+          "start": 93.77,
+          "end": 94.23
+        },
+        {
+          "word": " you",
+          "start": 94.23,
+          "end": 94.83
+        },
+        {
+          "word": " have",
+          "start": 94.83,
+          "end": 94.99
+        },
+        {
+          "word": " more",
+          "start": 94.99,
+          "end": 95.19
+        },
+        {
+          "word": " time.",
+          "start": 95.19,
+          "end": 95.57
+        }
+      ]
+    },
+    {
+      "start": 96.27,
+      "end": 97.41,
+      "text": "You have more time to do things.",
+      "words": [
+        {
+          "word": " You",
+          "start": 96.27,
+          "end": 96.43
+        },
+        {
+          "word": " have",
+          "start": 96.43,
+          "end": 96.47
+        },
+        {
+          "word": " more",
+          "start": 96.47,
+          "end": 96.59
+        },
+        {
+          "word": " time",
+          "start": 96.59,
+          "end": 96.81
+        },
+        {
+          "word": " to",
+          "start": 96.81,
+          "end": 96.97
+        },
+        {
+          "word": " do",
+          "start": 96.97,
+          "end": 97.13
+        },
+        {
+          "word": " things.",
+          "start": 97.13,
+          "end": 97.41
+        }
+      ]
+    },
+    {
+      "start": 97.83,
+      "end": 100.57,
+      "text": "I could play games, which I did.",
+      "words": [
+        {
+          "word": " I",
+          "start": 97.83,
+          "end": 98.07
+        },
+        {
+          "word": " could",
+          "start": 98.07,
+          "end": 98.29
+        },
+        {
+          "word": " play",
+          "start": 98.29,
+          "end": 98.63
+        },
+        {
+          "word": " games,",
+          "start": 98.63,
+          "end": 99.23
+        },
+        {
+          "word": " which",
+          "start": 99.51,
+          "end": 100.23
+        },
+        {
+          "word": " I",
+          "start": 100.23,
+          "end": 100.43
+        },
+        {
+          "word": " did.",
+          "start": 100.43,
+          "end": 100.57
+        }
+      ]
+    },
+    {
+      "start": 100.97,
+      "end": 102.45,
+      "text": "I used to play cowboys and Indians.",
+      "words": [
+        {
+          "word": " I",
+          "start": 100.97,
+          "end": 101.11
+        },
+        {
+          "word": " used",
+          "start": 101.11,
+          "end": 101.29
+        },
+        {
+          "word": " to",
+          "start": 101.29,
+          "end": 101.41
+        },
+        {
+          "word": " play",
+          "start": 101.41,
+          "end": 101.59
+        },
+        {
+          "word": " cowboys",
+          "start": 101.59,
+          "end": 101.99
+        },
+        {
+          "word": " and",
+          "start": 101.99,
+          "end": 102.17
+        },
+        {
+          "word": " Indians.",
+          "start": 102.17,
+          "end": 102.45
+        }
+      ]
+    },
+    {
+      "start": 102.45,
+      "end": 104.03,
+      "text": "Yeah, that's what I play.",
+      "words": [
+        {
+          "word": " Yeah,",
+          "start": 102.45,
+          "end": 103.13
+        },
+        {
+          "word": " that's",
+          "start": 103.19,
+          "end": 103.45
+        },
+        {
+          "word": " what",
+          "start": 103.45,
+          "end": 103.59
+        },
+        {
+          "word": " I",
+          "start": 103.59,
+          "end": 103.73
+        },
+        {
+          "word": " play.",
+          "start": 103.73,
+          "end": 104.03
+        }
+      ]
+    },
+    {
+      "start": 104.35,
+      "end": 104.63,
+      "text": "Do you?",
+      "words": [
+        {
+          "word": " Do",
+          "start": 104.35,
+          "end": 104.45
+        },
+        {
+          "word": " you?",
+          "start": 104.45,
+          "end": 104.63
+        }
+      ]
+    },
+    {
+      "start": 104.79,
+      "end": 105.07,
+      "text": "Yeah.",
+      "words": [
+        {
+          "word": " Yeah.",
+          "start": 104.79,
+          "end": 105.07
+        }
+      ]
+    },
+    {
+      "start": 105.67,
+      "end": 107.03,
+      "text": "That's what I like about being young.",
+      "words": [
+        {
+          "word": " That's",
+          "start": 105.67,
+          "end": 105.95
+        },
+        {
+          "word": " what",
+          "start": 105.95,
+          "end": 106.09
+        },
+        {
+          "word": " I",
+          "start": 106.09,
+          "end": 106.19
+        },
+        {
+          "word": " like",
+          "start": 106.19,
+          "end": 106.37
+        },
+        {
+          "word": " about",
+          "start": 106.37,
+          "end": 106.55
+        },
+        {
+          "word": " being",
+          "start": 106.55,
+          "end": 106.77
+        },
+        {
+          "word": " young.",
+          "start": 106.77,
+          "end": 107.03
+        }
+      ]
+    },
+    {
+      "start": 107.61,
+      "end": 109.53,
+      "text": "I could use my imagination more.",
+      "words": [
+        {
+          "word": " I",
+          "start": 107.61,
+          "end": 108.05
+        },
+        {
+          "word": " could",
+          "start": 108.05,
+          "end": 108.17
+        },
+        {
+          "word": " use",
+          "start": 108.17,
+          "end": 108.37
+        },
+        {
+          "word": " my",
+          "start": 108.37,
+          "end": 108.57
+        },
+        {
+          "word": " imagination",
+          "start": 108.57,
+          "end": 109.09
+        },
+        {
+          "word": " more.",
+          "start": 109.09,
+          "end": 109.53
+        }
+      ]
+    },
+    {
+      "start": 110.29,
+      "end": 113.17,
+      "text": "That's not story. You can't do that anymore.",
+      "words": [
+        {
+          "word": " That's",
+          "start": 110.29,
+          "end": 110.73
+        },
+        {
+          "word": " not",
+          "start": 110.73,
+          "end": 110.87
+        },
+        {
+          "word": " story.",
+          "start": 110.87,
+          "end": 111.51
+        },
+        {
+          "word": " You",
+          "start": 112.17,
+          "end": 112.37
+        },
+        {
+          "word": " can't",
+          "start": 112.37,
+          "end": 112.57
+        },
+        {
+          "word": " do",
+          "start": 112.57,
+          "end": 112.69
+        },
+        {
+          "word": " that",
+          "start": 112.69,
+          "end": 112.85
+        },
+        {
+          "word": " anymore.",
+          "start": 112.85,
+          "end": 113.17
+        }
+      ]
+    },
+    {
+      "start": 113.59,
+      "end": 115.89,
+      "text": "Well, I could be an older cowboy.",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 113.59,
+          "end": 113.85
+        },
+        {
+          "word": " I",
+          "start": 114.33,
+          "end": 114.49
+        },
+        {
+          "word": " could",
+          "start": 114.49,
+          "end": 114.61
+        },
+        {
+          "word": " be",
+          "start": 114.61,
+          "end": 114.79
+        },
+        {
+          "word": " an",
+          "start": 114.79,
+          "end": 114.97
+        },
+        {
+          "word": " older",
+          "start": 114.97,
+          "end": 115.55
+        },
+        {
+          "word": " cowboy.",
+          "start": 115.55,
+          "end": 115.89
+        }
+      ]
+    },
+    {
+      "start": 116.87,
+      "end": 117.63,
+      "text": "I might do it, yes.",
+      "words": [
+        {
+          "word": " I",
+          "start": 116.87,
+          "end": 117.05
+        },
+        {
+          "word": " might",
+          "start": 117.05,
+          "end": 117.19
+        },
+        {
+          "word": " do",
+          "start": 117.19,
+          "end": 117.35
+        },
+        {
+          "word": " it,",
+          "start": 117.35,
+          "end": 117.47
+        },
+        {
+          "word": " yes.",
+          "start": 117.49,
+          "end": 117.63
+        }
+      ]
+    },
+    {
+      "start": 118.89,
+      "end": 122.59,
+      "text": "Will you fall in love and what will it be like?",
+      "words": [
+        {
+          "word": " Will",
+          "start": 118.89,
+          "end": 119.13
+        },
+        {
+          "word": " you",
+          "start": 119.13,
+          "end": 119.27
+        },
+        {
+          "word": " fall",
+          "start": 119.27,
+          "end": 119.55
+        },
+        {
+          "word": " in",
+          "start": 119.55,
+          "end": 119.77
+        },
+        {
+          "word": " love",
+          "start": 119.77,
+          "end": 120.03
+        },
+        {
+          "word": " and",
+          "start": 120.03,
+          "end": 121.63
+        },
+        {
+          "word": " what",
+          "start": 121.63,
+          "end": 121.85
+        },
+        {
+          "word": " will",
+          "start": 121.85,
+          "end": 122.09
+        },
+        {
+          "word": " it",
+          "start": 122.09,
+          "end": 122.21
+        },
+        {
+          "word": " be",
+          "start": 122.21,
+          "end": 122.33
+        },
+        {
+          "word": " like?",
+          "start": 122.33,
+          "end": 122.59
+        }
+      ]
+    },
+    {
+      "start": 123.37,
+      "end": 124.21,
+      "text": "I don't know.",
+      "words": [
+        {
+          "word": " I",
+          "start": 123.37,
+          "end": 123.63
+        },
+        {
+          "word": " don't",
+          "start": 123.63,
+          "end": 123.93
+        },
+        {
+          "word": " know.",
+          "start": 123.93,
+          "end": 124.21
+        }
+      ]
+    },
+    {
+      "start": 124.69,
+      "end": 126.35,
+      "text": "Like, we'll have babies.",
+      "words": [
+        {
+          "word": " Like,",
+          "start": 124.69,
+          "end": 124.83
+        },
+        {
+          "word": " we'll",
+          "start": 125.47,
+          "end": 125.77
+        },
+        {
+          "word": " have",
+          "start": 125.77,
+          "end": 125.89
+        },
+        {
+          "word": " babies.",
+          "start": 125.89,
+          "end": 126.35
+        }
+      ]
+    },
+    {
+      "start": 126.55,
+      "end": 127.39,
+      "text": "It will be like fun.",
+      "words": [
+        {
+          "word": " It",
+          "start": 126.55,
+          "end": 126.59
+        },
+        {
+          "word": " will",
+          "start": 126.59,
+          "end": 126.71
+        },
+        {
+          "word": " be",
+          "start": 126.71,
+          "end": 126.87
+        },
+        {
+          "word": " like",
+          "start": 126.87,
+          "end": 127.07
+        },
+        {
+          "word": " fun.",
+          "start": 127.07,
+          "end": 127.39
+        }
+      ]
+    },
+    {
+      "start": 127.63,
+      "end": 129.05,
+      "text": "I'll like how to change.",
+      "words": [
+        {
+          "word": " I'll",
+          "start": 127.63,
+          "end": 127.85
+        },
+        {
+          "word": " like",
+          "start": 127.85,
+          "end": 128.17
+        },
+        {
+          "word": " how",
+          "start": 128.17,
+          "end": 128.39
+        },
+        {
+          "word": " to",
+          "start": 128.39,
+          "end": 128.59
+        },
+        {
+          "word": " change.",
+          "start": 128.59,
+          "end": 129.05
+        }
+      ]
+    },
+    {
+      "start": 129.05,
+      "end": 132.81,
+      "text": "Even though I'll have to change his diaper, it'll be fun.",
+      "words": [
+        {
+          "word": " Even",
+          "start": 129.05,
+          "end": 129.81
+        },
+        {
+          "word": " though",
+          "start": 129.81,
+          "end": 130.19
+        },
+        {
+          "word": " I'll",
+          "start": 130.19,
+          "end": 130.39
+        },
+        {
+          "word": " have",
+          "start": 130.39,
+          "end": 130.55
+        },
+        {
+          "word": " to",
+          "start": 130.55,
+          "end": 130.73
+        },
+        {
+          "word": " change",
+          "start": 130.73,
+          "end": 130.99
+        },
+        {
+          "word": " his",
+          "start": 130.99,
+          "end": 131.17
+        },
+        {
+          "word": " diaper,",
+          "start": 131.17,
+          "end": 131.47
+        },
+        {
+          "word": " it'll",
+          "start": 132.07,
+          "end": 132.25
+        },
+        {
+          "word": " be",
+          "start": 132.25,
+          "end": 132.41
+        },
+        {
+          "word": " fun.",
+          "start": 132.41,
+          "end": 132.81
+        }
+      ]
+    },
+    {
+      "start": 133.27,
+      "end": 133.53,
+      "text": "Oh.",
+      "words": [
+        {
+          "word": " Oh.",
+          "start": 133.27,
+          "end": 133.53
+        }
+      ]
+    },
+    {
+      "start": 133.97,
+      "end": 135.17,
+      "text": "But what about we cries?",
+      "words": [
+        {
+          "word": " But",
+          "start": 133.97,
+          "end": 134.37
+        },
+        {
+          "word": " what",
+          "start": 134.37,
+          "end": 134.53
+        },
+        {
+          "word": " about",
+          "start": 134.53,
+          "end": 134.69
+        },
+        {
+          "word": " we",
+          "start": 134.69,
+          "end": 134.87
+        },
+        {
+          "word": " cries?",
+          "start": 134.87,
+          "end": 135.17
+        }
+      ]
+    },
+    {
+      "start": 135.83,
+      "end": 136.47,
+      "text": "Oh, well.",
+      "words": [
+        {
+          "word": " Oh,",
+          "start": 135.83,
+          "end": 136.07
+        },
+        {
+          "word": " well.",
+          "start": 136.17,
+          "end": 136.47
+        }
+      ]
+    },
+    {
+      "start": 136.93,
+      "end": 138.71,
+      "text": "Oh, does he like edge hearing to him?",
+      "words": [
+        {
+          "word": " Oh,",
+          "start": 136.93,
+          "end": 137.11
+        },
+        {
+          "word": " does",
+          "start": 137.13,
+          "end": 137.23
+        },
+        {
+          "word": " he",
+          "start": 137.23,
+          "end": 137.41
+        },
+        {
+          "word": " like",
+          "start": 137.41,
+          "end": 137.67
+        },
+        {
+          "word": " edge",
+          "start": 137.67,
+          "end": 137.97
+        },
+        {
+          "word": " hearing",
+          "start": 137.97,
+          "end": 138.27
+        },
+        {
+          "word": " to",
+          "start": 138.27,
+          "end": 138.55
+        },
+        {
+          "word": " him?",
+          "start": 138.55,
+          "end": 138.71
+        }
+      ]
+    },
+    {
+      "start": 139.15,
+      "end": 139.49,
+      "text": "Hmm?",
+      "words": [
+        {
+          "word": " Hmm?",
+          "start": 139.15,
+          "end": 139.49
+        }
+      ]
+    },
+    {
+      "start": 140.51,
+      "end": 142.85,
+      "text": "And who do you love now? Who do you love now?",
+      "words": [
+        {
+          "word": " And",
+          "start": 140.51,
+          "end": 140.71
+        },
+        {
+          "word": " who",
+          "start": 140.71,
+          "end": 140.89
+        },
+        {
+          "word": " do",
+          "start": 140.89,
+          "end": 140.95
+        },
+        {
+          "word": " you",
+          "start": 140.95,
+          "end": 141.11
+        },
+        {
+          "word": " love",
+          "start": 141.11,
+          "end": 141.29
+        },
+        {
+          "word": " now?",
+          "start": 141.29,
+          "end": 141.77
+        },
+        {
+          "word": " Who",
+          "start": 142.15,
+          "end": 142.25
+        },
+        {
+          "word": " do",
+          "start": 142.25,
+          "end": 142.31
+        },
+        {
+          "word": " you",
+          "start": 142.31,
+          "end": 142.41
+        },
+        {
+          "word": " love",
+          "start": 142.41,
+          "end": 142.59
+        },
+        {
+          "word": " now?",
+          "start": 142.59,
+          "end": 142.85
+        }
+      ]
+    },
+    {
+      "start": 148.4,
+      "end": 149.18,
+      "text": "My mom.",
+      "words": [
+        {
+          "word": " My",
+          "start": 148.4,
+          "end": 148.92
+        },
+        {
+          "word": " mom.",
+          "start": 148.92,
+          "end": 149.18
+        }
+      ]
+    },
+    {
+      "start": 149.46,
+      "end": 150.46,
+      "text": "Your mom? Your dad?",
+      "words": [
+        {
+          "word": " Your",
+          "start": 149.46,
+          "end": 149.62
+        },
+        {
+          "word": " mom?",
+          "start": 149.62,
+          "end": 149.82
+        },
+        {
+          "word": " Your",
+          "start": 150.16,
+          "end": 150.2
+        },
+        {
+          "word": " dad?",
+          "start": 150.2,
+          "end": 150.46
+        }
+      ]
+    },
+    {
+      "start": 151.04,
+      "end": 153.26,
+      "text": "I like my dad. I like my family.",
+      "words": [
+        {
+          "word": " I",
+          "start": 151.04,
+          "end": 151.5
+        },
+        {
+          "word": " like",
+          "start": 151.5,
+          "end": 151.7
+        },
+        {
+          "word": " my",
+          "start": 151.7,
+          "end": 151.9
+        },
+        {
+          "word": " dad.",
+          "start": 151.9,
+          "end": 152.1
+        },
+        {
+          "word": " I",
+          "start": 152.52,
+          "end": 152.62
+        },
+        {
+          "word": " like",
+          "start": 152.62,
+          "end": 152.8
+        },
+        {
+          "word": " my",
+          "start": 152.8,
+          "end": 152.96
+        },
+        {
+          "word": " family.",
+          "start": 152.96,
+          "end": 153.26
+        }
+      ]
+    },
+    {
+      "start": 153.68,
+      "end": 156.84,
+      "text": "Did you fall in love? What was it like?",
+      "words": [
+        {
+          "word": " Did",
+          "start": 153.68,
+          "end": 153.88
+        },
+        {
+          "word": " you",
+          "start": 153.88,
+          "end": 154.06
+        },
+        {
+          "word": " fall",
+          "start": 154.06,
+          "end": 154.36
+        },
+        {
+          "word": " in",
+          "start": 154.36,
+          "end": 154.56
+        },
+        {
+          "word": " love?",
+          "start": 154.56,
+          "end": 154.92
+        },
+        {
+          "word": " What",
+          "start": 155.6,
+          "end": 155.98
+        },
+        {
+          "word": " was",
+          "start": 155.98,
+          "end": 156.32
+        },
+        {
+          "word": " it",
+          "start": 156.32,
+          "end": 156.5
+        },
+        {
+          "word": " like?",
+          "start": 156.5,
+          "end": 156.84
+        }
+      ]
+    },
+    {
+      "start": 159.3,
+      "end": 163.38,
+      "text": "Yes, it was different for me.",
+      "words": [
+        {
+          "word": " Yes,",
+          "start": 159.3,
+          "end": 159.82
+        },
+        {
+          "word": " it",
+          "start": 160.4,
+          "end": 160.92
+        },
+        {
+          "word": " was",
+          "start": 160.92,
+          "end": 162.52
+        },
+        {
+          "word": " different",
+          "start": 162.52,
+          "end": 162.88
+        },
+        {
+          "word": " for",
+          "start": 162.88,
+          "end": 163.16
+        },
+        {
+          "word": " me.",
+          "start": 163.16,
+          "end": 163.38
+        }
+      ]
+    },
+    {
+      "start": 163.38,
+      "end": 166.12,
+      "text": "I felt a love leaf.",
+      "words": [
+        {
+          "word": " I",
+          "start": 163.38,
+          "end": 163.58
+        },
+        {
+          "word": " felt",
+          "start": 163.58,
+          "end": 163.68
+        },
+        {
+          "word": " a",
+          "start": 163.68,
+          "end": 165.0
+        },
+        {
+          "word": " love",
+          "start": 165.0,
+          "end": 165.34
+        },
+        {
+          "word": " leaf.",
+          "start": 165.34,
+          "end": 166.12
+        }
+      ]
+    },
+    {
+      "start": 166.84,
+      "end": 167.74,
+      "text": "And did you get married?",
+      "words": [
+        {
+          "word": " And",
+          "start": 166.84,
+          "end": 167.04
+        },
+        {
+          "word": " did",
+          "start": 167.04,
+          "end": 167.22
+        },
+        {
+          "word": " you",
+          "start": 167.22,
+          "end": 167.3
+        },
+        {
+          "word": " get",
+          "start": 167.3,
+          "end": 167.5
+        },
+        {
+          "word": " married?",
+          "start": 167.5,
+          "end": 167.74
+        }
+      ]
+    },
+    {
+      "start": 168.66,
+      "end": 172.46,
+      "text": "No, unfortunately, my partner, she passed away.",
+      "words": [
+        {
+          "word": " No,",
+          "start": 168.66,
+          "end": 168.66
+        },
+        {
+          "word": " unfortunately,",
+          "start": 168.78,
+          "end": 169.18
+        },
+        {
+          "word": " my",
+          "start": 169.8,
+          "end": 170.76
+        },
+        {
+          "word": " partner,",
+          "start": 170.76,
+          "end": 171.54
+        },
+        {
+          "word": " she",
+          "start": 171.68,
+          "end": 171.78
+        },
+        {
+          "word": " passed",
+          "start": 171.78,
+          "end": 172.16
+        },
+        {
+          "word": " away.",
+          "start": 172.16,
+          "end": 172.46
+        }
+      ]
+    },
+    {
+      "start": 172.58,
+      "end": 173.76,
+      "text": "She died, unfortunately.",
+      "words": [
+        {
+          "word": " She",
+          "start": 172.58,
+          "end": 172.68
+        },
+        {
+          "word": " died,",
+          "start": 172.68,
+          "end": 172.98
+        },
+        {
+          "word": " unfortunately.",
+          "start": 173.3,
+          "end": 173.76
+        }
+      ]
+    },
+    {
+      "start": 175.14,
+      "end": 175.78,
+      "text": "That was a sad thing.",
+      "words": [
+        {
+          "word": " That",
+          "start": 175.14,
+          "end": 175.14
+        },
+        {
+          "word": " was",
+          "start": 175.14,
+          "end": 175.26
+        },
+        {
+          "word": " a",
+          "start": 175.26,
+          "end": 175.4
+        },
+        {
+          "word": " sad",
+          "start": 175.4,
+          "end": 175.58
+        },
+        {
+          "word": " thing.",
+          "start": 175.58,
+          "end": 175.78
+        }
+      ]
+    },
+    {
+      "start": 176.32,
+      "end": 176.86,
+      "text": "She got sick.",
+      "words": [
+        {
+          "word": " She",
+          "start": 176.32,
+          "end": 176.44
+        },
+        {
+          "word": " got",
+          "start": 176.44,
+          "end": 176.62
+        },
+        {
+          "word": " sick.",
+          "start": 176.62,
+          "end": 176.86
+        }
+      ]
+    },
+    {
+      "start": 177.68,
+      "end": 178.56,
+      "text": "I'm going to cry.",
+      "words": [
+        {
+          "word": " I'm",
+          "start": 177.68,
+          "end": 178.08
+        },
+        {
+          "word": " going",
+          "start": 178.08,
+          "end": 178.16
+        },
+        {
+          "word": " to",
+          "start": 178.16,
+          "end": 178.24
+        },
+        {
+          "word": " cry.",
+          "start": 178.24,
+          "end": 178.56
+        }
+      ]
+    },
+    {
+      "start": 178.96,
+      "end": 179.72,
+      "text": "No, no, no.",
+      "words": [
+        {
+          "word": " No,",
+          "start": 178.96,
+          "end": 179.24
+        },
+        {
+          "word": " no,",
+          "start": 179.36,
+          "end": 179.48
+        },
+        {
+          "word": " no.",
+          "start": 179.54,
+          "end": 179.72
+        }
+      ]
+    },
+    {
+      "start": 179.98,
+      "end": 180.14,
+      "text": "Don't.",
+      "words": [
+        {
+          "word": " Don't.",
+          "start": 179.98,
+          "end": 180.14
+        }
+      ]
+    },
+    {
+      "start": 180.64,
+      "end": 181.38,
+      "text": "No, no, no.",
+      "words": [
+        {
+          "word": " No,",
+          "start": 180.64,
+          "end": 180.9
+        },
+        {
+          "word": " no,",
+          "start": 181.1,
+          "end": 181.1
+        },
+        {
+          "word": " no.",
+          "start": 181.24,
+          "end": 181.38
+        }
+      ]
+    },
+    {
+      "start": 182.6,
+      "end": 182.68,
+      "text": "No.",
+      "words": [
+        {
+          "word": " No.",
+          "start": 182.6,
+          "end": 182.68
+        }
+      ]
+    },
+    {
+      "start": 183.14,
+      "end": 183.7,
+      "text": "Ah, no, no.",
+      "words": [
+        {
+          "word": " Ah,",
+          "start": 183.14,
+          "end": 183.34
+        },
+        {
+          "word": " no,",
+          "start": 183.5,
+          "end": 183.5
+        },
+        {
+          "word": " no.",
+          "start": 183.6,
+          "end": 183.7
+        }
+      ]
+    },
+    {
+      "start": 183.82,
+      "end": 184.9,
+      "text": "These things happen, Sean.",
+      "words": [
+        {
+          "word": " These",
+          "start": 183.82,
+          "end": 184.06
+        },
+        {
+          "word": " things",
+          "start": 184.06,
+          "end": 184.28
+        },
+        {
+          "word": " happen,",
+          "start": 184.28,
+          "end": 184.58
+        },
+        {
+          "word": " Sean.",
+          "start": 184.78,
+          "end": 184.9
+        }
+      ]
+    },
+    {
+      "start": 185.1,
+      "end": 185.6,
+      "text": "That's life.",
+      "words": [
+        {
+          "word": " That's",
+          "start": 185.1,
+          "end": 185.3
+        },
+        {
+          "word": " life.",
+          "start": 185.3,
+          "end": 185.6
+        }
+      ]
+    },
+    {
+      "start": 187.26,
+      "end": 189.24,
+      "text": "But I have very good memories.",
+      "words": [
+        {
+          "word": " But",
+          "start": 187.26,
+          "end": 187.66
+        },
+        {
+          "word": " I",
+          "start": 187.66,
+          "end": 188.06
+        },
+        {
+          "word": " have",
+          "start": 188.06,
+          "end": 188.58
+        },
+        {
+          "word": " very",
+          "start": 188.58,
+          "end": 188.78
+        },
+        {
+          "word": " good",
+          "start": 188.78,
+          "end": 188.94
+        },
+        {
+          "word": " memories.",
+          "start": 188.94,
+          "end": 189.24
+        }
+      ]
+    },
+    {
+      "start": 190.18,
+      "end": 190.9,
+      "text": "Very good memories.",
+      "words": [
+        {
+          "word": " Very",
+          "start": 190.18,
+          "end": 190.42
+        },
+        {
+          "word": " good",
+          "start": 190.42,
+          "end": 190.58
+        },
+        {
+          "word": " memories.",
+          "start": 190.58,
+          "end": 190.9
+        }
+      ]
+    },
+    {
+      "start": 190.9,
+      "end": 192.04,
+      "text": "And you live.",
+      "words": [
+        {
+          "word": " And",
+          "start": 190.9,
+          "end": 191.64
+        },
+        {
+          "word": " you",
+          "start": 191.64,
+          "end": 191.76
+        },
+        {
+          "word": " live.",
+          "start": 191.76,
+          "end": 192.04
+        }
+      ]
+    },
+    {
+      "start": 192.56,
+      "end": 194.46,
+      "text": "And often times you live in your head with memories.",
+      "words": [
+        {
+          "word": " And",
+          "start": 192.56,
+          "end": 192.84
+        },
+        {
+          "word": " often",
+          "start": 192.84,
+          "end": 193.0
+        },
+        {
+          "word": " times",
+          "start": 193.0,
+          "end": 193.3
+        },
+        {
+          "word": " you",
+          "start": 193.3,
+          "end": 193.4
+        },
+        {
+          "word": " live",
+          "start": 193.4,
+          "end": 193.52
+        },
+        {
+          "word": " in",
+          "start": 193.52,
+          "end": 193.64
+        },
+        {
+          "word": " your",
+          "start": 193.64,
+          "end": 193.76
+        },
+        {
+          "word": " head",
+          "start": 193.76,
+          "end": 193.94
+        },
+        {
+          "word": " with",
+          "start": 193.94,
+          "end": 194.14
+        },
+        {
+          "word": " memories.",
+          "start": 194.14,
+          "end": 194.46
+        }
+      ]
+    },
+    {
+      "start": 195.2,
+      "end": 196.92,
+      "text": "You can remember all the good things.",
+      "words": [
+        {
+          "word": " You",
+          "start": 195.2,
+          "end": 195.42
+        },
+        {
+          "word": " can",
+          "start": 195.42,
+          "end": 195.58
+        },
+        {
+          "word": " remember",
+          "start": 195.58,
+          "end": 195.92
+        },
+        {
+          "word": " all",
+          "start": 195.92,
+          "end": 196.34
+        },
+        {
+          "word": " the",
+          "start": 196.34,
+          "end": 196.5
+        },
+        {
+          "word": " good",
+          "start": 196.5,
+          "end": 196.62
+        },
+        {
+          "word": " things.",
+          "start": 196.62,
+          "end": 196.92
+        }
+      ]
+    },
+    {
+      "start": 197.44,
+      "end": 198.4,
+      "text": "And that's the important thing.",
+      "words": [
+        {
+          "word": " And",
+          "start": 197.44,
+          "end": 197.52
+        },
+        {
+          "word": " that's",
+          "start": 197.52,
+          "end": 197.74
+        },
+        {
+          "word": " the",
+          "start": 197.74,
+          "end": 197.84
+        },
+        {
+          "word": " important",
+          "start": 197.84,
+          "end": 198.12
+        },
+        {
+          "word": " thing.",
+          "start": 198.12,
+          "end": 198.4
+        }
+      ]
+    },
+    {
+      "start": 202.72,
+      "end": 206.88,
+      "text": "Well, the advice I would give to you, Sean, is",
+      "words": [
+        {
+          "word": " Well,",
+          "start": 202.72,
+          "end": 203.06
+        },
+        {
+          "word": " the",
+          "start": 203.2,
+          "end": 203.22
+        },
+        {
+          "word": " advice",
+          "start": 203.22,
+          "end": 203.68
+        },
+        {
+          "word": " I",
+          "start": 203.68,
+          "end": 203.96
+        },
+        {
+          "word": " would",
+          "start": 203.96,
+          "end": 204.06
+        },
+        {
+          "word": " give",
+          "start": 204.06,
+          "end": 204.3
+        },
+        {
+          "word": " to",
+          "start": 204.3,
+          "end": 204.48
+        },
+        {
+          "word": " you,",
+          "start": 204.48,
+          "end": 204.68
+        },
+        {
+          "word": " Sean,",
+          "start": 204.76,
+          "end": 204.92
+        },
+        {
+          "word": " is",
+          "start": 206.52,
+          "end": 206.88
+        }
+      ]
+    },
+    {
+      "start": 206.88,
+      "end": 209.88,
+      "text": "you don't have to be rich to be happy.",
+      "words": [
+        {
+          "word": " you",
+          "start": 206.88,
+          "end": 207.66
+        },
+        {
+          "word": " don't",
+          "start": 207.66,
+          "end": 207.78
+        },
+        {
+          "word": " have",
+          "start": 207.78,
+          "end": 207.92
+        },
+        {
+          "word": " to",
+          "start": 207.92,
+          "end": 208.0
+        },
+        {
+          "word": " be",
+          "start": 208.0,
+          "end": 208.12
+        },
+        {
+          "word": " rich",
+          "start": 208.12,
+          "end": 208.46
+        },
+        {
+          "word": " to",
+          "start": 208.46,
+          "end": 209.46
+        },
+        {
+          "word": " be",
+          "start": 209.46,
+          "end": 209.6
+        },
+        {
+          "word": " happy.",
+          "start": 209.6,
+          "end": 209.88
+        }
+      ]
+    },
+    {
+      "start": 210.42,
+      "end": 212.82,
+      "text": "Do the things you like doing that make you feel good.",
+      "words": [
+        {
+          "word": " Do",
+          "start": 210.42,
+          "end": 210.86
+        },
+        {
+          "word": " the",
+          "start": 210.86,
+          "end": 211.02
+        },
+        {
+          "word": " things",
+          "start": 211.02,
+          "end": 211.16
+        },
+        {
+          "word": " you",
+          "start": 211.16,
+          "end": 211.32
+        },
+        {
+          "word": " like",
+          "start": 211.32,
+          "end": 211.52
+        },
+        {
+          "word": " doing",
+          "start": 211.52,
+          "end": 211.74
+        },
+        {
+          "word": " that",
+          "start": 211.74,
+          "end": 211.94
+        },
+        {
+          "word": " make",
+          "start": 211.94,
+          "end": 212.14
+        },
+        {
+          "word": " you",
+          "start": 212.14,
+          "end": 212.28
+        },
+        {
+          "word": " feel",
+          "start": 212.28,
+          "end": 212.48
+        },
+        {
+          "word": " good.",
+          "start": 212.48,
+          "end": 212.82
+        }
+      ]
+    },
+    {
+      "start": 213.66,
+      "end": 216.68,
+      "text": "Because when you're happy yourself, everybody else is happy.",
+      "words": [
+        {
+          "word": " Because",
+          "start": 213.66,
+          "end": 214.1
+        },
+        {
+          "word": " when",
+          "start": 214.1,
+          "end": 214.28
+        },
+        {
+          "word": " you're",
+          "start": 214.28,
+          "end": 214.4
+        },
+        {
+          "word": " happy",
+          "start": 214.4,
+          "end": 214.62
+        },
+        {
+          "word": " yourself,",
+          "start": 214.62,
+          "end": 215.08
+        },
+        {
+          "word": " everybody",
+          "start": 215.56,
+          "end": 215.9
+        },
+        {
+          "word": " else",
+          "start": 215.9,
+          "end": 216.24
+        },
+        {
+          "word": " is",
+          "start": 216.24,
+          "end": 216.42
+        },
+        {
+          "word": " happy.",
+          "start": 216.42,
+          "end": 216.68
+        }
+      ]
+    },
+    {
+      "start": 218.1,
+      "end": 220.32,
+      "text": "Sean, do you have advice for Des?",
+      "words": [
+        {
+          "word": " Sean,",
+          "start": 218.1,
+          "end": 218.54
+        },
+        {
+          "word": " do",
+          "start": 218.72,
+          "end": 218.82
+        },
+        {
+          "word": " you",
+          "start": 218.82,
+          "end": 218.84
+        },
+        {
+          "word": " have",
+          "start": 218.84,
+          "end": 218.94
+        },
+        {
+          "word": " advice",
+          "start": 218.94,
+          "end": 219.2
+        },
+        {
+          "word": " for",
+          "start": 219.2,
+          "end": 220.04
+        },
+        {
+          "word": " Des?",
+          "start": 220.04,
+          "end": 220.32
+        }
+      ]
+    },
+    {
+      "start": 220.32,
+      "end": 226.45,
+      "text": "Basically, don't bully lots of people.",
+      "words": [
+        {
+          "word": " Basically,",
+          "start": 220.32,
+          "end": 221.26
+        },
+        {
+          "word": " don't",
+          "start": 224.85,
+          "end": 225.11
+        },
+        {
+          "word": " bully",
+          "start": 225.11,
+          "end": 225.53
+        },
+        {
+          "word": " lots",
+          "start": 225.53,
+          "end": 225.85
+        },
+        {
+          "word": " of",
+          "start": 225.85,
+          "end": 225.99
+        },
+        {
+          "word": " people.",
+          "start": 225.99,
+          "end": 226.45
+        }
+      ]
+    },
+    {
+      "start": 227.05,
+      "end": 230.17,
+      "text": "The people I know in school, like my friend Alex in school,",
+      "words": [
+        {
+          "word": " The",
+          "start": 227.05,
+          "end": 227.35
+        },
+        {
+          "word": " people",
+          "start": 227.35,
+          "end": 227.65
+        },
+        {
+          "word": " I",
+          "start": 227.65,
+          "end": 227.89
+        },
+        {
+          "word": " know",
+          "start": 227.89,
+          "end": 228.09
+        },
+        {
+          "word": " in",
+          "start": 228.09,
+          "end": 228.23
+        },
+        {
+          "word": " school,",
+          "start": 228.23,
+          "end": 228.43
+        },
+        {
+          "word": " like",
+          "start": 228.59,
+          "end": 228.77
+        },
+        {
+          "word": " my",
+          "start": 228.77,
+          "end": 228.97
+        },
+        {
+          "word": " friend",
+          "start": 228.97,
+          "end": 229.23
+        },
+        {
+          "word": " Alex",
+          "start": 229.23,
+          "end": 229.59
+        },
+        {
+          "word": " in",
+          "start": 229.59,
+          "end": 229.83
+        },
+        {
+          "word": " school,",
+          "start": 229.83,
+          "end": 230.17
+        }
+      ]
+    },
+    {
+      "start": 230.77,
+      "end": 233.03,
+      "text": "whenever he gets hurt, I hug him.",
+      "words": [
+        {
+          "word": " whenever",
+          "start": 230.77,
+          "end": 231.09
+        },
+        {
+          "word": " he",
+          "start": 231.09,
+          "end": 231.39
+        },
+        {
+          "word": " gets",
+          "start": 231.39,
+          "end": 231.59
+        },
+        {
+          "word": " hurt,",
+          "start": 231.59,
+          "end": 232.11
+        },
+        {
+          "word": " I",
+          "start": 232.21,
+          "end": 232.41
+        },
+        {
+          "word": " hug",
+          "start": 232.41,
+          "end": 232.71
+        },
+        {
+          "word": " him.",
+          "start": 232.71,
+          "end": 233.03
+        }
+      ]
+    },
+    {
+      "start": 233.71,
+      "end": 235.55,
+      "text": "He might not be able to work.",
+      "words": [
+        {
+          "word": " He",
+          "start": 233.71,
+          "end": 233.87
+        },
+        {
+          "word": " might",
+          "start": 233.87,
+          "end": 234.03
+        },
+        {
+          "word": " not",
+          "start": 234.03,
+          "end": 234.31
+        },
+        {
+          "word": " be",
+          "start": 234.31,
+          "end": 234.57
+        },
+        {
+          "word": " able",
+          "start": 234.57,
+          "end": 234.97
+        },
+        {
+          "word": " to",
+          "start": 234.97,
+          "end": 235.33
+        },
+        {
+          "word": " work.",
+          "start": 235.33,
+          "end": 235.55
+        }
+      ]
+    },
+    {
+      "start": 236.13,
+      "end": 237.27,
+      "text": "Oh, that's a good advice.",
+      "words": [
+        {
+          "word": " Oh,",
+          "start": 236.13,
+          "end": 236.39
+        },
+        {
+          "word": " that's",
+          "start": 236.43,
+          "end": 236.69
+        },
+        {
+          "word": " a",
+          "start": 236.69,
+          "end": 236.75
+        },
+        {
+          "word": " good",
+          "start": 236.75,
+          "end": 236.85
+        },
+        {
+          "word": " advice.",
+          "start": 236.85,
+          "end": 237.27
+        }
+      ]
+    },
+    {
+      "start": 239.05,
+      "end": 240.37,
+      "text": "And be yourself.",
+      "words": [
+        {
+          "word": " And",
+          "start": 239.05,
+          "end": 239.05
+        },
+        {
+          "word": " be",
+          "start": 239.05,
+          "end": 239.73
+        },
+        {
+          "word": " yourself.",
+          "start": 239.73,
+          "end": 240.37
+        }
+      ]
+    },
+    {
+      "start": 240.79,
+      "end": 242.91,
+      "text": "Don't let other people tell you what you should be.",
+      "words": [
+        {
+          "word": " Don't",
+          "start": 240.79,
+          "end": 241.01
+        },
+        {
+          "word": " let",
+          "start": 241.01,
+          "end": 241.19
+        },
+        {
+          "word": " other",
+          "start": 241.19,
+          "end": 241.31
+        },
+        {
+          "word": " people",
+          "start": 241.31,
+          "end": 241.65
+        },
+        {
+          "word": " tell",
+          "start": 241.65,
+          "end": 241.95
+        },
+        {
+          "word": " you",
+          "start": 241.95,
+          "end": 242.11
+        },
+        {
+          "word": " what",
+          "start": 242.11,
+          "end": 242.31
+        },
+        {
+          "word": " you",
+          "start": 242.31,
+          "end": 242.49
+        },
+        {
+          "word": " should",
+          "start": 242.49,
+          "end": 242.67
+        },
+        {
+          "word": " be.",
+          "start": 242.67,
+          "end": 242.91
+        }
+      ]
+    },
+    {
+      "start": 243.87,
+      "end": 245.03,
+      "text": "Just be as you are.",
+      "words": [
+        {
+          "word": " Just",
+          "start": 243.87,
+          "end": 244.21
+        },
+        {
+          "word": " be",
+          "start": 244.21,
+          "end": 244.49
+        },
+        {
+          "word": " as",
+          "start": 244.49,
+          "end": 244.67
+        },
+        {
+          "word": " you",
+          "start": 244.67,
+          "end": 244.83
+        },
+        {
+          "word": " are.",
+          "start": 244.83,
+          "end": 245.03
+        }
+      ]
+    },
+    {
+      "start": 245.23,
+      "end": 245.71,
+      "text": "Isn't that true?",
+      "words": [
+        {
+          "word": " Isn't",
+          "start": 245.23,
+          "end": 245.35
+        },
+        {
+          "word": " that",
+          "start": 245.35,
+          "end": 245.49
+        },
+        {
+          "word": " true?",
+          "start": 245.49,
+          "end": 245.71
+        }
+      ]
+    },
+    {
+      "start": 246.03,
+      "end": 246.39,
+      "text": "Yeah.",
+      "words": [
+        {
+          "word": " Yeah.",
+          "start": 246.03,
+          "end": 246.39
+        }
+      ]
+    },
+    {
+      "start": 246.51,
+      "end": 249.19,
+      "text": "And I'm sure your life is going to be very successful.",
+      "words": [
+        {
+          "word": " And",
+          "start": 246.51,
+          "end": 246.67
+        },
+        {
+          "word": " I'm",
+          "start": 246.67,
+          "end": 246.95
+        },
+        {
+          "word": " sure",
+          "start": 246.95,
+          "end": 247.15
+        },
+        {
+          "word": " your",
+          "start": 247.15,
+          "end": 247.83
+        },
+        {
+          "word": " life",
+          "start": 247.83,
+          "end": 248.07
+        },
+        {
+          "word": " is",
+          "start": 248.07,
+          "end": 248.19
+        },
+        {
+          "word": " going",
+          "start": 248.19,
+          "end": 248.31
+        },
+        {
+          "word": " to",
+          "start": 248.31,
+          "end": 248.39
+        },
+        {
+          "word": " be",
+          "start": 248.39,
+          "end": 248.49
+        },
+        {
+          "word": " very",
+          "start": 248.49,
+          "end": 248.69
+        },
+        {
+          "word": " successful.",
+          "start": 248.69,
+          "end": 249.19
+        }
+      ]
+    },
+    {
+      "start": 250.25,
+      "end": 252.01,
+      "text": "You have all the right things.",
+      "words": [
+        {
+          "word": " You",
+          "start": 250.25,
+          "end": 250.73
+        },
+        {
+          "word": " have",
+          "start": 250.73,
+          "end": 251.19
+        },
+        {
+          "word": " all",
+          "start": 251.19,
+          "end": 251.41
+        },
+        {
+          "word": " the",
+          "start": 251.41,
+          "end": 251.55
+        },
+        {
+          "word": " right",
+          "start": 251.55,
+          "end": 251.71
+        },
+        {
+          "word": " things.",
+          "start": 251.71,
+          "end": 252.01
+        }
+      ]
+    },
+    {
+      "start": 252.01,
+      "end": 253.93,
+      "text": "You have all the right things to do.",
+      "words": [
+        {
+          "word": " You",
+          "start": 252.01,
+          "end": 252.61
+        },
+        {
+          "word": " have",
+          "start": 252.61,
+          "end": 252.73
+        },
+        {
+          "word": " all",
+          "start": 252.73,
+          "end": 252.93
+        },
+        {
+          "word": " the",
+          "start": 252.93,
+          "end": 253.07
+        },
+        {
+          "word": " right",
+          "start": 253.07,
+          "end": 253.23
+        },
+        {
+          "word": " things",
+          "start": 253.23,
+          "end": 253.45
+        },
+        {
+          "word": " to",
+          "start": 253.45,
+          "end": 253.67
+        },
+        {
+          "word": " do.",
+          "start": 253.67,
+          "end": 253.93
+        }
+      ]
+    },
+    {
+      "start": 254.39,
+      "end": 255.29,
+      "text": "All your good friends.",
+      "words": [
+        {
+          "word": " All",
+          "start": 254.39,
+          "end": 254.61
+        },
+        {
+          "word": " your",
+          "start": 254.61,
+          "end": 254.75
+        },
+        {
+          "word": " good",
+          "start": 254.75,
+          "end": 254.91
+        },
+        {
+          "word": " friends.",
+          "start": 254.91,
+          "end": 255.29
+        }
+      ]
+    },
+    {
+      "start": 256.57,
+      "end": 257.85,
+      "text": "And keep those friends going.",
+      "words": [
+        {
+          "word": " And",
+          "start": 256.57,
+          "end": 256.57
+        },
+        {
+          "word": " keep",
+          "start": 256.57,
+          "end": 256.97
+        },
+        {
+          "word": " those",
+          "start": 256.97,
+          "end": 257.25
+        },
+        {
+          "word": " friends",
+          "start": 257.25,
+          "end": 257.55
+        },
+        {
+          "word": " going.",
+          "start": 257.55,
+          "end": 257.85
+        }
+      ]
+    },
+    {
+      "start": 258.51,
+      "end": 259.29,
+      "text": "And keep life going.",
+      "words": [
+        {
+          "word": " And",
+          "start": 258.51,
+          "end": 258.55
+        },
+        {
+          "word": " keep",
+          "start": 258.55,
+          "end": 258.77
+        },
+        {
+          "word": " life",
+          "start": 258.77,
+          "end": 259.01
+        },
+        {
+          "word": " going.",
+          "start": 259.01,
+          "end": 259.29
+        }
+      ]
+    },
+    {
+      "start": 259.53,
+      "end": 260.61,
+      "text": "There you go.",
+      "words": [
+        {
+          "word": " There",
+          "start": 259.53,
+          "end": 259.71
+        },
+        {
+          "word": " you",
+          "start": 259.71,
+          "end": 260.47
+        },
+        {
+          "word": " go.",
+          "start": 260.47,
+          "end": 260.61
+        }
+      ]
+    }
+  ]
+}

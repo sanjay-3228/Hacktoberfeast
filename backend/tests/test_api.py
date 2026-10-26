@@ -174,6 +174,34 @@ def test_status_done_and_processing(client: TestClient, jobs_dir: Any) -> None:
     assert client.get("/jobs/nope/status").status_code == 404
 
 
+def test_create_job_saves_upload_and_queues_pipeline(
+    client: TestClient, jobs_dir: Any, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    submitted: dict[str, Any] = {}
+
+    class FakeExecutor:
+        def submit(self, function: Any, *args: Any, **kwargs: Any) -> None:
+            submitted["function"] = function
+            submitted["args"] = args
+            submitted["kwargs"] = kwargs
+
+    monkeypatch.setattr(main, "_pipeline_executor", FakeExecutor())
+    response = client.post(
+        "/jobs",
+        files={"file": ("clip.mp4", b"video-bytes", "video/mp4")},
+        data={"title": "Uploaded clip", "use_faces": "false", "use_llm": "false", "embed": "false"},
+    )
+
+    assert response.status_code == 202
+    payload = response.json()
+    assert payload["status"] == "processing"
+    job_id = payload["job_id"]
+    assert job_id.startswith("job-")
+    assert (jobs_dir / job_id / "upload_title.txt").read_text(encoding="utf-8") == "Uploaded clip"
+    assert submitted["args"][0] == job_id
+    assert submitted["kwargs"] == {"use_faces": False, "use_llm": False, "embed": False, "num_speakers": None}
+
+
 # ---------------------------------------------------------------------------
 # result.json serving and path-safety
 # ---------------------------------------------------------------------------

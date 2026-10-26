@@ -1,11 +1,13 @@
 # Install on Kaggle/Colab. Pin the versions that work for you after the first
-# successful run (pyannote and torch often conflict: install pyannote first).
+# successful run if the hosted image changes its torch or SpeechBrain stack.
 faster-whisper==1.2.1
-pyannote.audio
+speechbrain
 sentence-transformers
 mediapipe==0.10.14
 opencv-python-headless
-numpy
+numpy==1.26.4
+scikit-learn
+soundfile
 openai
 groq
 python-dotenv

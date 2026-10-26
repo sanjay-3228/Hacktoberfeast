@@ -12,11 +12,6 @@ JOBS_DIR = Path(os.getenv("JOBS_DIR", "jobs"))
 # Whisper: "large-v3" on GPU, "small" if you only have CPU
 WHISPER_MODEL = os.getenv("WHISPER_MODEL", "large-v3")
 
-# pyannote: newer releases may use a different model name; check the
-# Hugging Face page and accept its terms first.
-DIARIZATION_MODEL = os.getenv("DIARIZATION_MODEL", "pyannote/speaker-diarization-3.1")
-HF_TOKEN = os.getenv("HF_TOKEN", "")
-
 EMBED_MODEL = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 
 # LLM (Groq is preferred when GROQ_API_KEY is set; OpenAI-compatible/Azure remain supported)

@@ -1,0 +1,1094 @@
+{
+  "job_id": "local-video-test",
+  "title": "Ages, Love, and Life Advice",
+  "topic": "The participants discuss the pros and cons of being young versus old, share personal thoughts on love, family, and loss, and give advice about happiness, kindness, and staying true to oneself.",
+  "duration": 275.94,
+  "speakers": [
+    {
+      "id": "S1",
+      "name": "Speaker 1",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S2",
+      "name": "Speaker 2",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S3",
+      "name": "Speaker 3",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S4",
+      "name": "Speaker 4",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S5",
+      "name": "Speaker 5",
+      "on_camera": true,
+      "avatar": "faces/S5.jpg",
+      "talk_time_pct": 14
+    },
+    {
+      "id": "S6",
+      "name": "Speaker 6",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S7",
+      "name": "Speaker 7",
+      "on_camera": true,
+      "avatar": "faces/S7.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S8",
+      "name": "Speaker 8",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S9",
+      "name": "Speaker 9",
+      "on_camera": true,
+      "avatar": "faces/S9.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S10",
+      "name": "Speaker 10",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S11",
+      "name": "Speaker 11",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S12",
+      "name": "Speaker 12",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S13",
+      "name": "Speaker 13",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S14",
+      "name": "Speaker 14",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S15",
+      "name": "Speaker 15",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S16",
+      "name": "Speaker 16",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 3
+    },
+    {
+      "id": "S17",
+      "name": "Speaker 17",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S18",
+      "name": "Speaker 18",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S19",
+      "name": "Speaker 19",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S20",
+      "name": "Speaker 20",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S21",
+      "name": "Speaker 21",
+      "on_camera": true,
+      "avatar": "faces/S21.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S22",
+      "name": "Speaker 22",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S23",
+      "name": "Speaker 23",
+      "on_camera": true,
+      "avatar": "faces/S23.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S24",
+      "name": "Speaker 24",
+      "on_camera": true,
+      "avatar": "faces/S24.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S25",
+      "name": "Speaker 25",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S26",
+      "name": "Speaker 26",
+      "on_camera": true,
+      "avatar": "faces/S26.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S27",
+      "name": "Speaker 27",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S28",
+      "name": "Speaker 28",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S29",
+      "name": "Speaker 29",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S30",
+      "name": "Speaker 30",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S31",
+      "name": "Speaker 31",
+      "on_camera": true,
+      "avatar": "faces/S31.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S32",
+      "name": "Speaker 32",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S33",
+      "name": "Speaker 33",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S34",
+      "name": "Speaker 34",
+      "on_camera": true,
+      "avatar": "faces/S34.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S35",
+      "name": "Speaker 35",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S36",
+      "name": "Speaker 36",
+      "on_camera": true,
+      "avatar": "faces/S36.jpg",
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S37",
+      "name": "Speaker 37",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S38",
+      "name": "Speaker 38",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S39",
+      "name": "Speaker 39",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S40",
+      "name": "Speaker 40",
+      "on_camera": true,
+      "avatar": "faces/S40.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S41",
+      "name": "Speaker 41",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S42",
+      "name": "Speaker 42",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S43",
+      "name": "Speaker 43",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S44",
+      "name": "Speaker 44",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S45",
+      "name": "Speaker 45",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S46",
+      "name": "Speaker 46",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S47",
+      "name": "Speaker 47",
+      "on_camera": true,
+      "avatar": "faces/S47.jpg",
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S48",
+      "name": "Speaker 48",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S49",
+      "name": "Speaker 49",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S50",
+      "name": "Speaker 50",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S51",
+      "name": "Speaker 51",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S52",
+      "name": "Speaker 52",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S53",
+      "name": "Speaker 53",
+      "on_camera": true,
+      "avatar": "faces/S53.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S54",
+      "name": "Speaker 54",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S55",
+      "name": "Speaker 55",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S56",
+      "name": "Speaker 56",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S57",
+      "name": "Speaker 57",
+      "on_camera": true,
+      "avatar": "faces/S57.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S58",
+      "name": "Speaker 58",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S59",
+      "name": "Speaker 59",
+      "on_camera": true,
+      "avatar": "faces/S59.jpg",
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S60",
+      "name": "Speaker 60",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S61",
+      "name": "Speaker 61",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S62",
+      "name": "Speaker 62",
+      "on_camera": true,
+      "avatar": "faces/S62.jpg",
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S63",
+      "name": "Speaker 63",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S64",
+      "name": "Speaker 64",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S65",
+      "name": "Speaker 65",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S66",
+      "name": "Speaker 66",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S67",
+      "name": "Speaker 67",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S68",
+      "name": "Speaker 68",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S69",
+      "name": "Speaker 69",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S70",
+      "name": "Speaker 70",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S71",
+      "name": "Speaker 71",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S72",
+      "name": "Speaker 72",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 2
+    },
+    {
+      "id": "S73",
+      "name": "Speaker 73",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S74",
+      "name": "Speaker 74",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S75",
+      "name": "Speaker 75",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S76",
+      "name": "Speaker 76",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    },
+    {
+      "id": "S77",
+      "name": "Speaker 77",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 0
+    },
+    {
+      "id": "S78",
+      "name": "Speaker 78",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 1
+    }
+  ],
+  "messages": [
+    {
+      "speaker": "S1",
+      "start": 7.11,
+      "end": 11.03,
+      "text": "I don't know where the question, I don't know where the song is."
+    },
+    {
+      "speaker": "S2",
+      "start": 12.49,
+      "end": 14.09,
+      "text": "When I ask you a question, the first one?"
+    },
+    {
+      "speaker": "S3",
+      "start": 16.49,
+      "end": 19.09,
+      "text": "Right, what is the worst thing about being young?"
+    },
+    {
+      "speaker": "S4",
+      "start": 20.37,
+      "end": 22.89,
+      "text": "Well, you get lots of homework."
+    },
+    {
+      "speaker": "S5",
+      "start": 23.63,
+      "end": 32.73,
+      "text": "It's also pretty, they're like in the middle, like in school, like in the middle of bad and good."
+    },
+    {
+      "speaker": "S6",
+      "start": 33.39,
+      "end": 35.65,
+      "text": "What is the worst thing about being old?"
+    },
+    {
+      "speaker": "S7",
+      "start": 37.81,
+      "end": 40.99,
+      "text": "Not being able to do things that you could do when you were young."
+    },
+    {
+      "speaker": "S8",
+      "start": 41.73,
+      "end": 45.83,
+      "text": "Like, you can't bend down and get stuff on the floor?"
+    },
+    {
+      "speaker": "S9",
+      "start": 46.21,
+      "end": 50.21,
+      "text": "Well, I can still do that, but the problem is your body gets a bit stiff."
+    },
+    {
+      "speaker": "S10",
+      "start": 50.21,
+      "end": 53.03,
+      "text": "I know it hurts a lot when you bend down."
+    },
+    {
+      "speaker": "S11",
+      "start": 53.87,
+      "end": 57.15,
+      "text": "That's right, yes. You might get sick more often."
+    },
+    {
+      "speaker": "S12",
+      "start": 58.27,
+      "end": 60.75,
+      "text": "Hopefully I don't, but that's the problem."
+    },
+    {
+      "speaker": "S13",
+      "start": 61.95,
+      "end": 62.75,
+      "text": "It is pretty bad."
+    },
+    {
+      "speaker": "S5",
+      "start": 63.19,
+      "end": 68.59,
+      "text": "The only time I want to have some is my mom to like get me born."
+    },
+    {
+      "speaker": "S14",
+      "start": 69.55,
+      "end": 71.37,
+      "text": "Oh yeah, do you wish you were old?"
+    },
+    {
+      "speaker": "S5",
+      "start": 75.05,
+      "end": 84.89,
+      "text": "Maybe, like, so I was old and I, so I can like buy stuff for my own and have been married, but that would be you."
+    },
+    {
+      "speaker": "S15",
+      "start": 86.01,
+      "end": 89.13,
+      "text": "Do you wish you were young? Why?"
+    },
+    {
+      "speaker": "S16",
+      "start": 90.99,
+      "end": 95.57,
+      "text": "Well, the problem about, the great thing about being young is you have more time."
+    },
+    {
+      "speaker": "S17",
+      "start": 96.27,
+      "end": 97.41,
+      "text": "You have more time to do things."
+    },
+    {
+      "speaker": "S18",
+      "start": 97.83,
+      "end": 100.57,
+      "text": "I could play games, which I did."
+    },
+    {
+      "speaker": "S19",
+      "start": 100.97,
+      "end": 102.45,
+      "text": "I used to play cowboys and Indians."
+    },
+    {
+      "speaker": "S20",
+      "start": 102.45,
+      "end": 104.63,
+      "text": "Yeah, that's what I play. Do you?"
+    },
+    {
+      "speaker": "S21",
+      "start": 104.79,
+      "end": 107.03,
+      "text": "Yeah. That's what I like about being young."
+    },
+    {
+      "speaker": "S22",
+      "start": 107.61,
+      "end": 109.53,
+      "text": "I could use my imagination more."
+    },
+    {
+      "speaker": "S23",
+      "start": 110.29,
+      "end": 113.17,
+      "text": "That's not story. You can't do that anymore."
+    },
+    {
+      "speaker": "S24",
+      "start": 113.59,
+      "end": 115.89,
+      "text": "Well, I could be an older cowboy."
+    },
+    {
+      "speaker": "S25",
+      "start": 116.87,
+      "end": 117.63,
+      "text": "I might do it, yes."
+    },
+    {
+      "speaker": "S26",
+      "start": 118.89,
+      "end": 122.59,
+      "text": "Will you fall in love and what will it be like?"
+    },
+    {
+      "speaker": "S27",
+      "start": 123.37,
+      "end": 124.21,
+      "text": "I don't know."
+    },
+    {
+      "speaker": "S28",
+      "start": 124.69,
+      "end": 126.35,
+      "text": "Like, we'll have babies."
+    },
+    {
+      "speaker": "S29",
+      "start": 126.55,
+      "end": 127.39,
+      "text": "It will be like fun."
+    },
+    {
+      "speaker": "S30",
+      "start": 127.63,
+      "end": 129.05,
+      "text": "I'll like how to change."
+    },
+    {
+      "speaker": "S31",
+      "start": 129.05,
+      "end": 132.81,
+      "text": "Even though I'll have to change his diaper, it'll be fun."
+    },
+    {
+      "speaker": "S32",
+      "start": 133.27,
+      "end": 135.17,
+      "text": "Oh. But what about we cries?"
+    },
+    {
+      "speaker": "S33",
+      "start": 135.83,
+      "end": 136.47,
+      "text": "Oh, well."
+    },
+    {
+      "speaker": "S34",
+      "start": 136.93,
+      "end": 139.49,
+      "text": "Oh, does he like edge hearing to him? Hmm?"
+    },
+    {
+      "speaker": "S35",
+      "start": 140.51,
+      "end": 142.85,
+      "text": "And who do you love now? Who do you love now?"
+    },
+    {
+      "speaker": "S36",
+      "start": 148.4,
+      "end": 149.18,
+      "text": "My mom."
+    },
+    {
+      "speaker": "S37",
+      "start": 149.46,
+      "end": 150.46,
+      "text": "Your mom? Your dad?"
+    },
+    {
+      "speaker": "S38",
+      "start": 151.04,
+      "end": 153.26,
+      "text": "I like my dad. I like my family."
+    },
+    {
+      "speaker": "S39",
+      "start": 153.68,
+      "end": 156.84,
+      "text": "Did you fall in love? What was it like?"
+    },
+    {
+      "speaker": "S40",
+      "start": 159.3,
+      "end": 163.38,
+      "text": "Yes, it was different for me."
+    },
+    {
+      "speaker": "S41",
+      "start": 163.38,
+      "end": 166.12,
+      "text": "I felt a love leaf."
+    },
+    {
+      "speaker": "S42",
+      "start": 166.84,
+      "end": 167.74,
+      "text": "And did you get married?"
+    },
+    {
+      "speaker": "S43",
+      "start": 168.66,
+      "end": 172.46,
+      "text": "No, unfortunately, my partner, she passed away."
+    },
+    {
+      "speaker": "S44",
+      "start": 172.58,
+      "end": 173.76,
+      "text": "She died, unfortunately."
+    },
+    {
+      "speaker": "S45",
+      "start": 175.14,
+      "end": 175.78,
+      "text": "That was a sad thing."
+    },
+    {
+      "speaker": "S46",
+      "start": 176.32,
+      "end": 176.86,
+      "text": "She got sick."
+    },
+    {
+      "speaker": "S47",
+      "start": 177.68,
+      "end": 178.56,
+      "text": "I'm going to cry."
+    },
+    {
+      "speaker": "S48",
+      "start": 178.96,
+      "end": 180.14,
+      "text": "No, no, no. Don't."
+    },
+    {
+      "speaker": "S49",
+      "start": 180.64,
+      "end": 181.38,
+      "text": "No, no, no."
+    },
+    {
+      "speaker": "S50",
+      "start": 182.6,
+      "end": 183.7,
+      "text": "No. Ah, no, no."
+    },
+    {
+      "speaker": "S51",
+      "start": 183.82,
+      "end": 184.9,
+      "text": "These things happen, Sean."
+    },
+    {
+      "speaker": "S52",
+      "start": 185.1,
+      "end": 185.6,
+      "text": "That's life."
+    },
+    {
+      "speaker": "S53",
+      "start": 187.26,
+      "end": 189.24,
+      "text": "But I have very good memories."
+    },
+    {
+      "speaker": "S54",
+      "start": 190.18,
+      "end": 190.9,
+      "text": "Very good memories."
+    },
+    {
+      "speaker": "S55",
+      "start": 190.9,
+      "end": 192.04,
+      "text": "And you live."
+    },
+    {
+      "speaker": "S56",
+      "start": 192.56,
+      "end": 194.46,
+      "text": "And often times you live in your head with memories."
+    },
+    {
+      "speaker": "S57",
+      "start": 195.2,
+      "end": 196.92,
+      "text": "You can remember all the good things."
+    },
+    {
+      "speaker": "S58",
+      "start": 197.44,
+      "end": 198.4,
+      "text": "And that's the important thing."
+    },
+    {
+      "speaker": "S59",
+      "start": 202.72,
+      "end": 204.92,
+      "text": "Well, the advice I would give to you, Sean,"
+    },
+    {
+      "speaker": "S59",
+      "start": 206.52,
+      "end": 206.88,
+      "text": "is"
+    },
+    {
+      "speaker": "S60",
+      "start": 206.88,
+      "end": 209.88,
+      "text": "you don't have to be rich to be happy."
+    },
+    {
+      "speaker": "S61",
+      "start": 210.42,
+      "end": 212.82,
+      "text": "Do the things you like doing that make you feel good."
+    },
+    {
+      "speaker": "S62",
+      "start": 213.66,
+      "end": 216.68,
+      "text": "Because when you're happy yourself, everybody else is happy."
+    },
+    {
+      "speaker": "S63",
+      "start": 218.1,
+      "end": 220.32,
+      "text": "Sean, do you have advice for Des?"
+    },
+    {
+      "speaker": "S64",
+      "start": 220.32,
+      "end": 221.26,
+      "text": "Basically,"
+    },
+    {
+      "speaker": "S64",
+      "start": 224.85,
+      "end": 226.45,
+      "text": "don't bully lots of people."
+    },
+    {
+      "speaker": "S65",
+      "start": 227.05,
+      "end": 230.17,
+      "text": "The people I know in school, like my friend Alex in school,"
+    },
+    {
+      "speaker": "S66",
+      "start": 230.77,
+      "end": 233.03,
+      "text": "whenever he gets hurt, I hug him."
+    },
+    {
+      "speaker": "S67",
+      "start": 233.71,
+      "end": 235.55,
+      "text": "He might not be able to work."
+    },
+    {
+      "speaker": "S68",
+      "start": 236.13,
+      "end": 237.27,
+      "text": "Oh, that's a good advice."
+    },
+    {
+      "speaker": "S69",
+      "start": 239.05,
+      "end": 240.37,
+      "text": "And be yourself."
+    },
+    {
+      "speaker": "S70",
+      "start": 240.79,
+      "end": 242.91,
+      "text": "Don't let other people tell you what you should be."
+    },
+    {
+      "speaker": "S71",
+      "start": 243.87,
+      "end": 245.71,
+      "text": "Just be as you are. Isn't that true?"
+    },
+    {
+      "speaker": "S72",
+      "start": 246.03,
+      "end": 249.19,
+      "text": "Yeah. And I'm sure your life is going to be very successful."
+    },
+    {
+      "speaker": "S73",
+      "start": 250.25,
+      "end": 252.01,
+      "text": "You have all the right things."
+    },
+    {
+      "speaker": "S74",
+      "start": 252.01,
+      "end": 253.93,
+      "text": "You have all the right things to do."
+    },
+    {
+      "speaker": "S75",
+      "start": 254.39,
+      "end": 255.29,
+      "text": "All your good friends."
+    },
+    {
+      "speaker": "S76",
+      "start": 256.57,
+      "end": 257.85,
+      "text": "And keep those friends going."
+    },
+    {
+      "speaker": "S77",
+      "start": 258.51,
+      "end": 259.29,
+      "text": "And keep life going."
+    },
+    {
+      "speaker": "S78",
+      "start": 259.53,
+      "end": 260.61,
+      "text": "There you go."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Worst Things About Being Young",
+      "start": 0.0,
+      "end": 34.0,
+      "summary": "The group answers the question about the hardest part of youth, mentioning homework and mixed feelings about school."
+    },
+    {
+      "title": "Challenges of Growing Old",
+      "start": 34.0,
+      "end": 59.0,
+      "summary": "Speakers talk about aging, focusing on physical limitations, stiffness, and increased illness."
+    },
+    {
+      "title": "Wishes for Different Ages",
+      "start": 59.0,
+      "end": 109.0,
+      "summary": "Participants explore whether they would like to be older or stay young, discussing independence, imagination, and gaming."
+    },
+    {
+      "title": "Love, Family, and Loss",
+      "start": 109.0,
+      "end": 151.0,
+      "summary": "The conversation moves to relationships, parental love, experiences of falling in love, and the grief of a partner’s death."
+    },
+    {
+      "title": "Advice on Happiness and Kindness",
+      "start": 151.0,
+      "end": 211.0,
+      "summary": "Advice is offered about finding happiness without wealth, helping friends, and staying positive for others."
+    },
+    {
+      "title": "Being Yourself and Closing Thoughts",
+      "start": 211.0,
+      "end": 275.9,
+      "summary": "Final remarks encourage anti‑bullying, authenticity, and optimism for the future."
+    }
+  ],
+  "takeaways": [
+    "Youth brings responsibilities like homework but also time and imagination.",
+    "Aging can limit physical abilities and increase health concerns.",
+    "Desires to be older often focus on independence, while youth is valued for freedom and play.",
+    "Love and family connections are central, yet loss can deeply affect emotional well‑being.",
+    "Happiness does not depend on wealth; kindness and self‑care are essential.",
+    "Avoid bullying and stay true to yourself for a healthier social environment."
+  ]
+}

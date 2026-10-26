@@ -1,36 +1,89 @@
-"""Stage 3: who spoke when (pyannote.audio)."""
+"""Stage 3: assign anonymous speakers to Whisper speech segments.
+
+Whisper supplies speech segments and timestamps. SpeechBrain supplies a voice
+embedding for each segment, and clustering groups similar voices. This keeps
+audio speaker timelines independent from the video face tracks so stage 6 can
+match the two timelines.
+"""
 from pathlib import Path
 
 import config
 from utils import free_gpu, load_json, save_json
 
 
-def diarize(audio_path: Path, out_path: Path, num_speakers: int | None = None) -> list[dict]:
-    """Returns [{"speaker": "SPEAKER_00", "start": 0.5, "end": 4.2}, ...]."""
+def _cluster_embeddings(embeddings, num_speakers: int | None):
+    from sklearn.cluster import AgglomerativeClustering
+
+    count = len(embeddings)
+    if count == 1:
+        return [0]
+    if num_speakers:
+        clusters = min(max(num_speakers, 1), count)
+        model = AgglomerativeClustering(n_clusters=clusters, metric="cosine", linkage="average")
+    else:
+        model = AgglomerativeClustering(
+            n_clusters=None,
+            distance_threshold=0.28,
+            metric="cosine",
+            linkage="average",
+        )
+    return model.fit_predict(embeddings).tolist()
+
+
+def diarize(
+    audio_path: Path,
+    transcript: dict,
+    out_path: Path,
+    num_speakers: int | None = None,
+) -> list[dict]:
+    """Return anonymous audio turns aligned to Whisper segment timestamps."""
     if out_path.exists():
         return load_json(out_path)
 
+    import numpy as np
+    import soundfile as sf
     import torch
-    from pyannote.audio import Pipeline
+    from speechbrain.inference.speaker import EncoderClassifier
 
-    try:  # newer pyannote uses `token`, older uses `use_auth_token`
-        pipe = Pipeline.from_pretrained(config.DIARIZATION_MODEL, token=config.HF_TOKEN)
-    except TypeError:
-        pipe = Pipeline.from_pretrained(config.DIARIZATION_MODEL, use_auth_token=config.HF_TOKEN)
+    audio, sample_rate = sf.read(str(audio_path), dtype="float32")
+    if audio.ndim > 1:
+        audio = audio.mean(axis=1)
+    if sample_rate != 16000:
+        raise ValueError(f"Expected 16 kHz audio, received {sample_rate} Hz")
 
-    if torch.cuda.is_available():
-        pipe.to(torch.device("cuda"))
+    segments = [s for s in transcript.get("segments", []) if s.get("words")]
+    if not segments:
+        save_json([], out_path)
+        return []
 
-    kwargs = {"num_speakers": num_speakers} if num_speakers else {}
-    output = pipe(str(audio_path), **kwargs)
-    annotation = getattr(output, "speaker_diarization", output)  # pyannote 4 vs 3
+    encoder = EncoderClassifier.from_hparams(
+        source="speechbrain/spkrec-ecapa-voxceleb",
+        run_opts={"device": "cuda" if torch.cuda.is_available() else "cpu"},
+    )
+    embeddings = []
+    usable_segments = []
+    for segment in segments:
+        start = max(int(float(segment["start"]) * sample_rate), 0)
+        end = min(int(float(segment["end"]) * sample_rate), len(audio))
+        if end - start < int(0.5 * sample_rate):
+            continue
+        waveform = torch.from_numpy(audio[start:end]).unsqueeze(0)
+        with torch.no_grad():
+            embedding = encoder.encode_batch(waveform).squeeze().cpu().numpy()
+        embeddings.append(embedding / max(float(np.linalg.norm(embedding)), 1e-12))
+        usable_segments.append(segment)
 
+    labels = _cluster_embeddings(np.asarray(embeddings), num_speakers) if embeddings else []
     turns = [
-        {"speaker": spk, "start": float(t.start), "end": float(t.end)}
-        for t, _, spk in annotation.itertracks(yield_label=True)
+        {
+            "speaker": f"AUDIO_{label:02d}",
+            "start": float(segment["start"]),
+            "end": float(segment["end"]),
+        }
+        for segment, label in zip(usable_segments, labels)
     ]
     save_json(turns, out_path)
 
-    del pipe
+    del encoder
     free_gpu()
     return turns

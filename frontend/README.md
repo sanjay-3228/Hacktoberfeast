@@ -1,34 +1,40 @@
-# Frontend
+hy d# Synchra — AI Research Notebook frontend
 
-Suggested stack: React + Vite + Tailwind. Use the HTML5 `<video>` element
-(`currentTime` to seek, `timeupdate` to highlight).
+A responsive React + Vite frontend for the Video Knowledge Extractor backend. It includes the backend job library, search and sorting controls, drag-and-drop upload, processing status, and a notebook details panel.
+
+## Run locally
+
+Requirements: Node.js 18+ and npm.
 
 ```bash
-npm create vite@latest . -- --template react
 npm install
-npm install -D tailwindcss @tailwindcss/vite
+npm run dev
 ```
 
-Set the API URL in `.env`:  `VITE_API_URL=http://localhost:8000`
+Open the local URL shown by Vite (usually http://localhost:5173).
 
-Start with the mock job: `GET /jobs/demo/result` (see `../docs/API.md`).
+Build for production:
 
-## Screens
+```bash
+npm run build
+npm run preview
+```
 
-**1. Home**: list of processed videos from `GET /jobs` (cards with title,
-topic, duration). Optional: upload button (Plan B only).
+## Backend integration
 
-**2. Workspace** (3 columns on desktop, tabs on mobile)
-- Left: chapter list (title + time). Highlight the current chapter. Click to seek.
-- Center: video player with a timeline bar showing chapter markers and
-  colored segments per speaker. Below: topic card and key-takeaway cards.
-- Right: group-chat transcript. WhatsApp-style bubbles with the speaker's
-  face avatar (`/jobs/{id}/faces/S1.jpg`), name, timestamp. Off-camera
-  speakers get a mic/silhouette icon and an "Off-camera" tag. Click a bubble
-  to seek; auto-scroll and highlight the current one.
-- Bottom/floating: **Ask AI** box (`POST /jobs/{id}/ask`). Show the answer and
-  source chips like `02:14 Priya`; clicking a chip seeks the video.
+Set the backend URL with `VITE_API_URL` (defaults to `http://localhost:8000`).
+On startup the app loads `GET /jobs`. Creating a notebook with a local recording
+sends the first selected file to `POST /jobs`, polls its status, then loads the
+completed result and video from the backend. The upload currently starts with
+faces and embeddings disabled so local processing is easier to test; enable those
+pipeline options later when the model environment is ready.
 
-**Extras**: speaker panel (talk-time %), filter chat by speaker, search box
-(`/search`), suggested questions, dark mode, "Export report" button
-(`/report`, Markdown download).
+When the backend is unavailable, the app shows an empty library and a connection
+notice. There is no local or hardcoded notebook fallback.
+
+## Stack
+
+- React
+- Vite
+- Lucide React icons
+- CSS with responsive layouts

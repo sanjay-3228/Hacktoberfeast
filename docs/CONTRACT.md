@@ -9,7 +9,7 @@ jobs/{job_id}/
   video.mp4          # web-playable (H.264 + AAC)
   audio.wav          # 16 kHz mono (pipeline only, not served)
   transcript.json    # raw Whisper output (pipeline only)
-  diarization.json   # raw pyannote output (pipeline only)
+  diarization.json   # anonymous audio speaker turns (pipeline only)
   faces_tracks.json  # raw face tracks (pipeline only)
   result.json        # served to the frontend
   chunks.json        # used by search and Q&A

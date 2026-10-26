@@ -8,7 +8,7 @@ if that file already exists.
 |---|------|--------------|
 | 1 | `stages/ingest.py` | web-playable `video.mp4` + 16 kHz `audio.wav` (ffmpeg) |
 | 2 | `stages/transcribe.py` | faster-whisper, word timestamps |
-| 3 | `stages/diarize.py` | pyannote: who spoke when |
+| 3 | `stages/diarize.py` | SpeechBrain voice embeddings -> anonymous audio speaker turns |
 | 4 | `stages/merge.py` | words + speakers -> messages (S1, S2, ...) |
 | 5 | `stages/faces.py` | MediaPipe face tracks + mouth movement |
 | 6 | `stages/match.py` | speaker <-> face matching, off-camera detection |
@@ -19,10 +19,11 @@ if that file already exists.
 ## Run on Kaggle
 
 1. Verify your phone number, enable **GPU** and **Internet** in the notebook settings.
-2. Add Secrets: `HF_TOKEN` (Hugging Face read token) and, for the LLM step,
-   `GROQ_API_KEY` (the default model is `openai/gpt-oss-120b`). The existing
-   OpenAI-compatible and Azure settings remain supported as fallbacks.
-3. On Hugging Face, accept the terms of the pyannote models (while logged in).
+2. Add Secret `GROQ_API_KEY` for the LLM step (the default model is
+   `openai/gpt-oss-120b`). The existing OpenAI-compatible and Azure settings
+   remain supported as fallbacks.
+3. Keep Internet enabled so SpeechBrain can download its public speaker encoder
+   on first use.
 4. Upload this project folder (or just `pipeline/`) as a private Kaggle
    Dataset, and your demo videos as another one. Attach both to the notebook.
 5. Open `kaggle_notebook.ipynb` (included), run the cells top to bottom.
@@ -52,7 +53,7 @@ $env:FFPROBE_BIN = "C:\path\to\ffprobe.exe"
 ```bash
 cd pipeline
 pip install -r requirements.txt
-WHISPER_MODEL=small HF_TOKEN=... python run_pipeline.py clip.mp4 test1 --no-llm --no-embed
+WHISPER_MODEL=small python run_pipeline.py clip.mp4 test1 --no-llm --no-embed
 ```
 
 ## Tests (no models needed)
