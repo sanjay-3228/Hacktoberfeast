@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "start": 0.0,
+    "end": 42.0,
+    "speaker": "S1",
+    "text": "Welcome everyone. Today we're talking about how students can build a study-group app. Priya, let's start with you. Thanks. The core idea is simple: match students who are taking the same course and have overlapping free time. From the engineering side, the hardest part was the scheduling logic. We use a greedy matcher first and optimize later.",
+    "embedding": null
+  },
+  {
+    "id": 1,
+    "start": 42.0,
+    "end": 85.0,
+    "speaker": "S2",
+    "text": "Rahul, how do you handle students who keep cancelling? We added a reliability score. If someone cancels late, their score drops and the matcher ranks them lower. We also found that groups of three or four work best. Larger groups tend to split into side conversations.",
+    "embedding": null
+  },
+  {
+    "id": 2,
+    "start": 85.0,
+    "end": 120.0,
+    "speaker": "S1",
+    "text": "What about privacy, since you collect timetables? Timetables stay on the device until a match is confirmed, and only the overlapping slots are shared. Next we want to add shared notes, and maybe a quiz generator built from the course material.",
+    "embedding": null
+  }
+]

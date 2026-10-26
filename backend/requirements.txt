@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+numpy>=1.26
+python-dotenv>=1.0
+openai>=1.30
+# Optional: semantic search. Without it the backend falls back to keyword search.
+# sentence-transformers>=3.0

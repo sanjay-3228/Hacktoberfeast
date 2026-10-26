@@ -1,0 +1,112 @@
+{
+  "job_id": "demo",
+  "title": "Building a campus study-group app (mock data)",
+  "topic": "A short interview about a study-group app that matches students by course and free time. The team explains the scheduling logic, how they handle cancellations, the ideal group size, and how timetable privacy is protected.",
+  "duration": 120.0,
+  "speakers": [
+    {
+      "id": "S1",
+      "name": "Priya",
+      "on_camera": true,
+      "avatar": "faces/S1.jpg",
+      "talk_time_pct": 42
+    },
+    {
+      "id": "S2",
+      "name": "Rahul",
+      "on_camera": true,
+      "avatar": "faces/S2.jpg",
+      "talk_time_pct": 37
+    },
+    {
+      "id": "S3",
+      "name": "Speaker 3",
+      "on_camera": false,
+      "avatar": null,
+      "talk_time_pct": 22
+    }
+  ],
+  "messages": [
+    {
+      "speaker": "S3",
+      "start": 0.0,
+      "end": 10.0,
+      "text": "Welcome everyone. Today we're talking about how students can build a study-group app. Priya, let's start with you."
+    },
+    {
+      "speaker": "S1",
+      "start": 10.0,
+      "end": 28.0,
+      "text": "Thanks. The core idea is simple: match students who are taking the same course and have overlapping free time."
+    },
+    {
+      "speaker": "S2",
+      "start": 28.0,
+      "end": 42.0,
+      "text": "From the engineering side, the hardest part was the scheduling logic. We use a greedy matcher first and optimize later."
+    },
+    {
+      "speaker": "S3",
+      "start": 42.0,
+      "end": 50.0,
+      "text": "Rahul, how do you handle students who keep cancelling?"
+    },
+    {
+      "speaker": "S2",
+      "start": 50.0,
+      "end": 68.0,
+      "text": "We added a reliability score. If someone cancels late, their score drops and the matcher ranks them lower."
+    },
+    {
+      "speaker": "S1",
+      "start": 68.0,
+      "end": 85.0,
+      "text": "We also found that groups of three or four work best. Larger groups tend to split into side conversations."
+    },
+    {
+      "speaker": "S3",
+      "start": 85.0,
+      "end": 93.0,
+      "text": "What about privacy, since you collect timetables?"
+    },
+    {
+      "speaker": "S1",
+      "start": 93.0,
+      "end": 108.0,
+      "text": "Timetables stay on the device until a match is confirmed, and only the overlapping slots are shared."
+    },
+    {
+      "speaker": "S2",
+      "start": 108.0,
+      "end": 120.0,
+      "text": "Next we want to add shared notes, and maybe a quiz generator built from the course material."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Introduction and core idea",
+      "start": 0.0,
+      "end": 42.0,
+      "summary": "The host introduces the app; Priya explains matching by course and free time and Rahul describes the scheduling logic."
+    },
+    {
+      "title": "Cancellations and group size",
+      "start": 42.0,
+      "end": 85.0,
+      "summary": "A reliability score ranks flaky users lower, and groups of three or four work best."
+    },
+    {
+      "title": "Privacy and next steps",
+      "start": 85.0,
+      "end": 120.0,
+      "summary": "Timetables stay on-device until a match is confirmed. Next: shared notes and a quiz generator."
+    }
+  ],
+  "takeaways": [
+    "Match students by shared course and overlapping free time.",
+    "A reliability score discourages late cancellations.",
+    "Groups of 3-4 work best; larger groups split up.",
+    "Timetables stay on-device until a match is confirmed.",
+    "Planned: shared notes and an auto quiz generator."
+  ]
+}

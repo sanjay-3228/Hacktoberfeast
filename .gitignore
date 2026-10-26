@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+node_modules/
+.ipynb_checkpoints/
+# processed jobs are big: keep only the demo mock
+backend/jobs/*
+!backend/jobs/demo/
+pipeline/jobs/
+*.zip
