@@ -41,6 +41,7 @@ import math
 import mimetypes
 import os
 import re
+import subprocess
 import sys
 import threading
 from contextlib import asynccontextmanager
@@ -397,20 +398,75 @@ def _run_pipeline_job(
 ) -> None:
     """Run the heavyweight pipeline away from the request thread."""
     pipeline_dir = _BASE_DIR.parent / "pipeline"
-    sys.path.insert(0, str(pipeline_dir))
     try:
-        import config as pipeline_config
-        from run_pipeline import process_video
+        configured_python = _env("PIPELINE_PYTHON")
+        if configured_python:
+            pipeline_python = Path(configured_python).expanduser()
+            if not pipeline_python.is_file():
+                raise FileNotFoundError(
+                    f"PIPELINE_PYTHON does not point to a Python executable: {pipeline_python}"
+                )
+            pipeline_python = pipeline_python.resolve()
+        else:
+            candidates = (
+                _BASE_DIR.parent / ".venv" / "Scripts" / "python.exe",
+                _BASE_DIR.parent / ".venv" / "bin" / "python",
+                pipeline_dir / ".venv" / "Scripts" / "python.exe",
+                pipeline_dir / ".venv" / "bin" / "python",
+            )
+            pipeline_python = next(
+                (candidate.resolve() for candidate in candidates if candidate.is_file()),
+                Path(sys.executable).resolve(),
+            )
 
-        pipeline_config.JOBS_DIR = settings.jobs_dir
-        process_video(
-            str(source_path),
-            job_id,
-            use_faces=use_faces,
-            use_llm=use_llm,
-            embed=embed,
-            num_speakers=num_speakers,
-        )
+        if pipeline_python != Path(sys.executable).resolve():
+            command = [
+                str(pipeline_python), str(pipeline_dir / "run_pipeline.py"),
+                str(source_path.resolve()), job_id,
+            ]
+            if not use_faces:
+                command.append("--no-faces")
+            if not use_llm:
+                command.append("--no-llm")
+            if not embed:
+                command.append("--no-embed")
+            if num_speakers is not None:
+                command.extend(("--num-speakers", str(num_speakers)))
+
+            child_env = os.environ.copy()
+            child_env["JOBS_DIR"] = str(settings.jobs_dir)
+            child_env["PYTHONUNBUFFERED"] = "1"
+            completed = subprocess.run(
+                command,
+                cwd=pipeline_dir,
+                env=child_env,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            if completed.returncode:
+                detail = (completed.stderr or completed.stdout).strip()
+                raise RuntimeError(
+                    f"Pipeline interpreter exited with status {completed.returncode}: "
+                    f"{detail[-4000:]}"
+                )
+            if completed.stdout.strip():
+                logger.info("Pipeline output for job %s:\n%s", job_id, completed.stdout.strip())
+        else:
+            sys.path.insert(0, str(pipeline_dir))
+            import config as pipeline_config
+            from run_pipeline import process_video
+
+            pipeline_config.JOBS_DIR = settings.jobs_dir
+            process_video(
+                str(source_path),
+                job_id,
+                use_faces=use_faces,
+                use_llm=use_llm,
+                embed=embed,
+                num_speakers=num_speakers,
+            )
+
         title_path = settings.jobs_dir / job_id / "upload_title.txt"
         result_path = settings.jobs_dir / job_id / "result.json"
         if title_path.is_file() and result_path.is_file():
@@ -421,6 +477,8 @@ def _run_pipeline_job(
                 encoding="utf-8",
             )
             title_path.unlink(missing_ok=True)
+        with _pipeline_errors_lock:
+            _pipeline_errors.pop(job_id, None)
     except Exception as exc:
         with _pipeline_errors_lock:
             _pipeline_errors[job_id] = str(exc)
@@ -1161,13 +1219,13 @@ def list_jobs() -> list[JobSummary]:
 def get_status(job_id: str) -> dict[str, Any]:
     """Report whether the job's final result is ready to serve."""
     job_dir = _job_dir(job_id)
+    if (job_dir / "result.json").is_file():
+        return {"status": "done", "progress": 100}
     with _pipeline_errors_lock:
         error = _pipeline_errors.get(job_id)
     if error:
         return {"status": "error", "progress": 0, "detail": error}
-    if not (job_dir / "result.json").is_file():
-        return {"status": "processing", "progress": 0}
-    return {"status": "done", "progress": 100}
+    return {"status": "processing", "progress": 0}
 
 
 @app.post(

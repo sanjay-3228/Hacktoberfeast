@@ -27,6 +27,9 @@ from utils import load_json, save_json, timed
 def process_video(video_path: str, job_id: str, use_faces: bool = True,
                   use_llm: bool = True, embed: bool = True,
                   num_speakers: int | None = None) -> Path:
+    if num_speakers is not None and num_speakers < 1:
+        raise ValueError("num_speakers must be at least 1")
+
     job_dir = config.JOBS_DIR / job_id
     job_dir.mkdir(parents=True, exist_ok=True)
 
@@ -34,9 +37,23 @@ def process_video(video_path: str, job_id: str, use_faces: bool = True,
         info = ingest(video_path, job_dir)
     with timed("2 transcribe"):
         transcript = transcribe(info["audio"], job_dir / "transcript.json")
+
+    diarization_path = job_dir / "diarization.json"
+    if num_speakers is not None and diarization_path.exists():
+        cached_turns = load_json(diarization_path)
+        cached_count = len({turn.get("speaker") for turn in cached_turns})
+        if cached_turns and cached_count != min(num_speakers, len(cached_turns)):
+            print(
+                f"[diarization] cached speaker count is {cached_count}; "
+                f"recomputing with {num_speakers} requested speakers"
+            )
+            diarization_path.unlink()
+            for stale_name in ("chunks.json", "result.json", "report.md"):
+                (job_dir / stale_name).unlink(missing_ok=True)
+
     with timed("3 diarize"):
         turns = diarize(
-            info["audio"], transcript, job_dir / "diarization.json", num_speakers
+            info["audio"], transcript, diarization_path, num_speakers
         )
     with timed("4 merge"):
         messages = merge(transcript, turns)

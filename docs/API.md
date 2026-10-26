@@ -28,9 +28,11 @@ Interactive docs: `http://localhost:8000/docs`
 
 The backend saves the upload and invokes `pipeline.process_video` in a background
 worker. Poll `/jobs/{id}/status` until it is `done`, then load `/result`. This
-local-processing route requires the pipeline dependencies to be installed in the
-same Python environment as the backend. A failed pipeline returns `status: error`
-with a diagnostic `detail`.
+local-processing route uses the repository root `.venv` when it exists, so the
+pipeline can use its model dependencies even when the API runs in another
+interpreter. Set `PIPELINE_PYTHON` to select a different pipeline interpreter.
+If neither is set, the API interpreter must have the pipeline requirements
+installed. A failed pipeline returns `status: error` with a diagnostic `detail`.
 
 ## Frontend notes
 

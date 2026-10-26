@@ -37,8 +37,15 @@ def diarize(
     num_speakers: int | None = None,
 ) -> list[dict]:
     """Return anonymous audio turns aligned to Whisper segment timestamps."""
+    if num_speakers is not None and num_speakers < 1:
+        raise ValueError("num_speakers must be at least 1")
+
     if out_path.exists():
-        return load_json(out_path)
+        cached_turns = load_json(out_path)
+        cached_count = len({turn.get("speaker") for turn in cached_turns})
+        expected_count = min(num_speakers, len(cached_turns)) if num_speakers else None
+        if num_speakers is None or (cached_turns and cached_count == expected_count):
+            return cached_turns
 
     import numpy as np
     import soundfile as sf

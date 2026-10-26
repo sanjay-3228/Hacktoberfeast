@@ -72,7 +72,10 @@ python tests/test_logic.py
 ## Known weak spots (test with a messy clip early)
 
 - Overlapping speech confuses diarization. If you know the speaker count,
-  pass `num_speakers=2`.
+  pass `--num-speakers 2` on the CLI, set the Expected speakers field when
+  uploading in the frontend, or pass `num_speakers=2` to `process_video()`.
+  Supplying a different count for an existing job recomputes diarization and
+  its dependent result and search index while reusing the transcript and video.
 - Mouth-movement matching is the MVP. Upgrade path: replace
   `_mouth_activity` in `stages/match.py` with LR-ASD or TalkNet scores.
 - Side-on faces and masks reduce face tracking quality.
