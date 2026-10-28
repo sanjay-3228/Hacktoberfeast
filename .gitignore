@@ -8,7 +8,20 @@ node_modules/
 # processed jobs are big: keep only the demo mock
 backend/jobs/*
 !backend/jobs/demo/
+.conversations/
 pipeline/jobs/
 *.zip
-videos/
-video.mp4
+*.log
+*.pid
+dist/
+.vite/
+.pytest_cache/
+pipeline/bench_jobs/
+pipeline/scratch/
+pipeline/models/
+*.mp4
+!backend/jobs/demo/video.mp4
+!videos/video1.mp4
+*.wav
+!pipeline/local-video/audio.wav
+!pipeline/local-video-test/audio.wav

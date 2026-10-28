@@ -8,7 +8,7 @@ if that file already exists.
 |---|------|--------------|
 | 1 | `stages/ingest.py` | web-playable `video.mp4` + 16 kHz `audio.wav` (ffmpeg) |
 | 2 | `stages/transcribe.py` | faster-whisper, word timestamps |
-| 3 | `stages/diarize.py` | SpeechBrain voice embeddings -> anonymous audio speaker turns |
+| 3 | `stages/diarize.py` | pyannote: who spoke when |
 | 4 | `stages/merge.py` | words + speakers -> messages (S1, S2, ...) |
 | 5 | `stages/faces.py` | MediaPipe face tracks + mouth movement |
 | 6 | `stages/match.py` | speaker <-> face matching, off-camera detection |
@@ -19,11 +19,10 @@ if that file already exists.
 ## Run on Kaggle
 
 1. Verify your phone number, enable **GPU** and **Internet** in the notebook settings.
-2. Add Secret `GROQ_API_KEY` for the LLM step (the default model is
-   `openai/gpt-oss-120b`). The existing OpenAI-compatible and Azure settings
-   remain supported as fallbacks.
-3. Keep Internet enabled so SpeechBrain can download its public speaker encoder
-   on first use.
+2. Add Secrets: `HF_TOKEN` (Hugging Face read token) and, for the LLM step,
+   `GROQ_API_KEY` (the default model is `openai/gpt-oss-120b`). The existing
+   OpenAI-compatible and Azure settings remain supported as fallbacks.
+3. On Hugging Face, accept the terms of the pyannote models (while logged in).
 4. Upload this project folder (or just `pipeline/`) as a private Kaggle
    Dataset, and your demo videos as another one. Attach both to the notebook.
 5. Open `kaggle_notebook.ipynb` (included), run the cells top to bottom.
@@ -53,7 +52,7 @@ $env:FFPROBE_BIN = "C:\path\to\ffprobe.exe"
 ```bash
 cd pipeline
 pip install -r requirements.txt
-WHISPER_MODEL=small python run_pipeline.py clip.mp4 test1 --no-llm --no-embed
+WHISPER_MODEL=small HF_TOKEN=... python run_pipeline.py clip.mp4 test1 --no-llm --no-embed
 ```
 
 ## Tests (no models needed)
@@ -72,10 +71,7 @@ python tests/test_logic.py
 ## Known weak spots (test with a messy clip early)
 
 - Overlapping speech confuses diarization. If you know the speaker count,
-  pass `--num-speakers 2` on the CLI, set the Expected speakers field when
-  uploading in the frontend, or pass `num_speakers=2` to `process_video()`.
-  Supplying a different count for an existing job recomputes diarization and
-  its dependent result and search index while reusing the transcript and video.
+  pass `num_speakers=2`.
 - Mouth-movement matching is the MVP. Upgrade path: replace
   `_mouth_activity` in `stages/match.py` with LR-ASD or TalkNet scores.
 - Side-on faces and masks reduce face tracking quality.

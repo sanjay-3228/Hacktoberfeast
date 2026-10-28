@@ -6,33 +6,35 @@ Interactive docs: `http://localhost:8000/docs`
 |--------|------|---------|
 | GET | `/health` | `{"ok": true}` |
 | GET | `/jobs` | list of `{job_id, title, topic, duration}` |
-| POST | `/jobs` | multipart upload -> `{"job_id": "...", "status": "processing"}` |
-| GET | `/jobs/{id}/status` | `{"status": "processing"|"done"|"error", "progress": 0|100}` |
-| GET | `/jobs/{id}/result` | the full `result.json` |
-| GET | `/jobs/{id}/video` | the video file (supports seeking) |
-| GET | `/jobs/{id}/faces/{file}` | avatar image, e.g. `S1.jpg` |
-| GET | `/jobs/{id}/search?q=...&k=5` | `{"results": [{start, end, speaker, text, score}]}` |
-| POST | `/jobs/{id}/ask` | body `{"question": "..."}` -> `{"answer": "...", "sources": [{start, end, speaker, text, score}]}` |
+| GET | `/jobs/{id}/status` | `{"status": "done", "progress": 100}` or `{"status": "processing", "progress": 0}` |
+| GET | `/jobs/{id}/result` | the full `result.json` (missing `job_id`/`title` are filled from the folder name / empty string) |
+| GET | `/jobs/{id}/search?q=...&k=3` | `{"results": [{start, end, speaker, text, score}]}` — semantic when embeddings + `sentence-transformers` are available, keyword otherwise; only positive-scoring chunks are returned |
+| POST | `/jobs/{id}/ask` | body `{"question": "..."}` → `{"answer": "...", "sources": [{start, end, speaker, text, score}]}` |
 | GET | `/jobs/{id}/report` | Markdown report (speakers, chapters, takeaways, transcript) |
+| GET | `/jobs/{id}/video` | the video file with `Accept-Ranges`/`206 Partial Content` (browser seeking works) |
+| GET | `/jobs/{id}/faces/{file}` | avatar image, e.g. `S1.jpg` (`jpg/jpeg/png/webp` only) |
 
-## Local processing upload
+## Behavior details
 
-`POST /jobs` accepts a multipart form with:
-
-- `file`: one video or audio file (`mp4`, `mov`, `mkv`, `avi`, `mp3`, `wav`, or `m4a`)
-- `title`: optional display title
-- `use_faces`: optional boolean, default `false`
-- `use_llm`: optional boolean, default `true`
-- `embed`: optional boolean, default `false`
-- `num_speakers`: optional integer hint for diarization
-
-The backend saves the upload and invokes `pipeline.process_video` in a background
-worker. Poll `/jobs/{id}/status` until it is `done`, then load `/result`. This
-local-processing route uses the repository root `.venv` when it exists, so the
-pipeline can use its model dependencies even when the API runs in another
-interpreter. Set `PIPELINE_PYTHON` to select a different pipeline interpreter.
-If neither is set, the API interpreter must have the pipeline requirements
-installed. A failed pipeline returns `status: error` with a diagnostic `detail`.
+- **Search**: keywords match whole words (no stemming). A query with no
+  positive-scoring chunk returns an empty list, never a fabricated result.
+- **Ask**: always grounded in retrieved chunks and returns them in `sources`
+  with timestamps. With an LLM configured the answer cites excerpts like `[1]`;
+  without one the answer is clearly labelled
+  `(Showing the most relevant transcript excerpt.)` — it never pretends an LLM
+  wrote it. If nothing matches: `No relevant transcript excerpts were found
+  for this question.`
+- **Errors**: `400` invalid query/`k`/body (422 validation is converted to
+  400), `404` unknown job/file/invalid job id, `416` unsatisfiable byte range
+  (with `Content-Range: bytes */size`), `500` unreadable result/chunks files
+  (job-corrupt). Internals are never leaked in error bodies.
+- **Safety**: `job_id` must match `[A-Za-z0-9_-]+`; all files resolve under
+  `JOBS_DIR/{job_id}`; traversal (`..`, encoded slashes, symlinks out of the
+  job folder) returns 404. Faces accept only flat image filenames.
+- **CORS**: from `CORS_ORIGINS`. `*` disables credentials; deployed
+  environments must list explicit origins.
+- **Job listing**: jobs with unreadable/non-object `result.json` or ids that
+  violate the pattern are skipped, not served missing.
 
 ## Frontend notes
 
@@ -41,14 +43,9 @@ installed. A failed pipeline returns `status: error` with a diagnostic `detail`.
 - Errors: 404 `{"detail": "Job not found"}`.
 - Answers carry `sources`; render each as a clickable chip like `02:14 Priya`.
 
-## Grounded Q&A and reports
+## Tests
 
-- `/search` retrieves the most relevant timestamped chunks using their stored
-  sentence embeddings, with keyword search as a fallback.
-- `/ask` passes those chunks to the configured Groq model (or supported
-  OpenAI-compatible/Azure fallback), returns a concise answer, and includes
-  source excerpts and timestamps for citation and video seeking.
-- `/report` generates a detailed conversation analysis from the full transcript
-  when Groq is configured, appends the transcript, and caches the Markdown as
-  `report.md` in the job folder. Set `GROQ_API_KEY` in the repository `.env`;
-  `GROQ_MODEL` is optional and defaults to `openai/gpt-oss-120b`.
+```bash
+cd backend
+python -m pytest tests -q    # 44 tests: endpoints, errors, traversal, ranges, fallbacks
+```

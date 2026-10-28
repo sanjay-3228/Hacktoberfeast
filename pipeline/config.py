@@ -9,8 +9,16 @@ except ImportError:
 
 JOBS_DIR = Path(os.getenv("JOBS_DIR", "jobs"))
 
-# Whisper: "large-v3" on GPU, "small" if you only have CPU
-WHISPER_MODEL = os.getenv("WHISPER_MODEL", "large-v3")
+# Whisper: "large-v3" on GPU, "base" or "small" if you only have CPU
+WHISPER_MODEL = os.getenv("WHISPER_MODEL", "base")
+WHISPER_BEAM_SIZE = int(os.getenv("WHISPER_BEAM_SIZE", "5"))
+WHISPER_REPETITION_PENALTY = float(os.getenv("WHISPER_REPETITION_PENALTY", "1.1"))
+WHISPER_HOTWORDS = os.getenv("WHISPER_HOTWORDS", "").strip()
+
+# pyannote: newer releases may use a different model name; check the
+# Hugging Face page and accept its terms first.
+DIARIZATION_MODEL = os.getenv("DIARIZATION_MODEL", "pyannote/speaker-diarization-3.1")
+HF_TOKEN = os.getenv("HF_TOKEN", "")
 
 EMBED_MODEL = os.getenv("EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
 

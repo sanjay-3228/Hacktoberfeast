@@ -1,5 +1,5 @@
 from typing import Optional
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class Speaker(BaseModel):
@@ -33,6 +33,11 @@ class Result(BaseModel):
     messages: list[Message] = []
     chapters: list[Chapter] = []
     takeaways: list[str] = []
+    language: Optional[str] = None
+    language_mode: Optional[str] = None
+    detected_language: Optional[str] = None
+    language_probability: Optional[float] = None
+    transcription_model: Optional[str] = None
 
 
 class JobSummary(BaseModel):
@@ -43,20 +48,32 @@ class JobSummary(BaseModel):
 
 
 class Source(BaseModel):
+    segment_id: str = ""
     start: float
     end: float
+    speaker_id: str = ""
     speaker: str = ""
     text: str
     score: float = 0
+    evidence_id: Optional[str] = None
 
 
 class AskRequest(BaseModel):
-    question: str
+    question: str = Field(..., min_length=1, max_length=1000)
+    conversation_id: Optional[str] = None
+    new_conversation: bool = False
+    speaker_id: Optional[str] = Field(default=None, max_length=100)
+    start_time: Optional[float] = Field(default=None, ge=0)
+    end_time: Optional[float] = Field(default=None, ge=0)
 
 
 class AskResponse(BaseModel):
     answer: str
     sources: list[Source]
+    conversation_id: str = ""
+    answer_type: str = "insufficient"
+    model: Optional[str] = None
+    status: Optional[str] = None
 
 
 class SearchResponse(BaseModel):
